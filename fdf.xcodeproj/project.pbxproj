@@ -72,6 +72,7 @@
 		9BC2DEC81E92A22F00576988 /* ft_strmapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 9BC2DE8D1E92A22F00576988 /* ft_strmapi.c */; };
 		9BC2DEC91E92A22F00576988 /* ft_strrchr.c in Sources */ = {isa = PBXBuildFile; fileRef = 9BC2DE8E1E92A22F00576988 /* ft_strrchr.c */; };
 		9BC2DF361E92A3E000576988 /* reader.c in Sources */ = {isa = PBXBuildFile; fileRef = 9BC2DF341E92A3E000576988 /* reader.c */; };
+		9BFD962D1EB3B6F000D79468 /* ft_array_size.c in Sources */ = {isa = PBXBuildFile; fileRef = 9BFD962C1EB3B64300D79468 /* ft_array_size.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -158,6 +159,7 @@
 		9BC2DE8E1E92A22F00576988 /* ft_strrchr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ft_strrchr.c; sourceTree = "<group>"; };
 		9BC2DF2F1E92A23C00576988 /* fdf */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = fdf; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BC2DF341E92A3E000576988 /* reader.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = reader.c; sourceTree = "<group>"; };
+		9BFD962C1EB3B64300D79468 /* ft_array_size.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_array_size.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +211,7 @@
 				9BC2DE4C1E92A22F00576988 /* ft_strmap.c */,
 				9BC2DE4D1E92A22F00576988 /* ft_lstadd.c */,
 				9BC2DE521E92A22F00576988 /* ft_strdel.c */,
+				9BFD962C1EB3B64300D79468 /* ft_array_size.c */,
 				9BC2DE531E92A22F00576988 /* ft_memccpy.c */,
 				9BC2DE541E92A22F00576988 /* ft_strlen.c */,
 				9BC2DE551E92A22F00576988 /* ft_strchr.c */,
@@ -374,6 +377,7 @@
 				9BC2DEB91E92A22F00576988 /* ft_putnbr_fd.c in Sources */,
 				9BC2DEBF1E92A22F00576988 /* ft_strnew.c in Sources */,
 				9BC2DEC11E92A22F00576988 /* ft_strnstr.c in Sources */,
+				9BFD962D1EB3B6F000D79468 /* ft_array_size.c in Sources */,
 				9BC2DE971E92A22F00576988 /* ft_memmove.c in Sources */,
 				9BC2DE941E92A22F00576988 /* ft_strlen.c in Sources */,
 				9BC2DEAF1E92A22F00576988 /* ft_strcpy.c in Sources */,

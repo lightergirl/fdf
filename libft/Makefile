@@ -71,7 +71,8 @@ SRC = ft_strncpy.c \
     ft_lstiter.c \
     ft_lstmap.c \
 	ft_lstadd_to_end.c \
-	ft_list_size.c
+	ft_list_size.c \
+	ft_arr_size.c
     
 OBJ = $(SRC:.c=.o)
 

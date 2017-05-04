@@ -19,6 +19,10 @@
 # include <fcntl.h>
 # include <math.h>
 
+# define FILEPATH_ERR	1
+# define MALLOC_ERR		2
+# define GNL_ERR		3
+
 typedef struct s_point{
 	double	x;
 	double	y;

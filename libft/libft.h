@@ -85,5 +85,6 @@ void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 void				ft_lstadd_to_end(t_list **head, t_list *list);
 int					ft_list_size(t_list *begin_list);
+size_t				ft_arr_size(char **arr);
 
 #endif

@@ -19,7 +19,7 @@ int main(int ac, char **av)
 	
 	if ((fd = open(av[1], O_RDONLY)) == -1)
 	{
-		print_err(1);
+		print_err(FILEPATH_ERR);
 		exit(0);
 	}
 	map = read_map(fd);
