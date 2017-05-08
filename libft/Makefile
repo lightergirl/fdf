@@ -6,7 +6,7 @@
 #    By: eignatye <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/29 22:11:59 by eignatye          #+#    #+#              #
-#    Updated: 2016/12/02 14:19:34 by eignatye         ###   ########.fr        #
+#    Updated: 2017/05/05 20:40:05 by eignatye         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -72,7 +72,10 @@ SRC = ft_strncpy.c \
     ft_lstmap.c \
 	ft_lstadd_to_end.c \
 	ft_list_size.c \
-	ft_arr_size.c
+	ft_arr_size.c \
+	ft_power.c \
+	ft_isupper.c \
+	ft_islower.c
     
 OBJ = $(SRC:.c=.o)
 

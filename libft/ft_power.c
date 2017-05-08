@@ -1,25 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   errors.c                                           :+:      :+:    :+:   */
+/*   ft_power.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: eignatye <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/04/17 18:45:13 by eignatye          #+#    #+#             */
-/*   Updated: 2017/04/17 18:45:17 by eignatye         ###   ########.fr       */
+/*   Created: 2016/12/08 15:29:56 by eignatye          #+#    #+#             */
+/*   Updated: 2017/05/08 15:55:28 by eignatye         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/fdf.h"
-#include <stdio.h>
+#include "libft.h"
 
-void	print_err(short err)
+int	ft_power(int base, int pow)
 {
-	if (err == 1)
-		perror("Incorrect file path");
-	if (err == 2)
-		perror("Malloc error");
-	if (err == 3)
-		perror("Get line from file error");
-	exit(EXIT_FAILURE);
+	if (pow != 0)
+		return (base * ft_power(base, pow - 1));
+	else
+		return (1);
 }

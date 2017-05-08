@@ -64,7 +64,31 @@
       <CommandLineArguments>
          <CommandLineArgument
             argument = "/nfs/2016/e/eignatye/Projects/fdf/fdf_demo/maps/42.fdf"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "/nfs/2016/e/eignatye/Projects/fdf/fdf/test_maps/point_with_color.fdf"
             isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "/nfs/2016/e/eignatye/Projects/fdf/fdf/test_maps/with_color.fdf"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "/nfs/2016/e/eignatye/Projects/fdf/fdf/test_maps/pyramide.fdf"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "/nfs/2016/e/eignatye/Projects/fdf/fdf/test_maps/pyra.fdf"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "/nfs/2016/e/eignatye/Projects/fdf/fdf_demo/maps/julia.fdf"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "/nfs/2016/e/eignatye/Projects/fdf/fdf_demo/maps/mars.fdf"
+            isEnabled = "NO">
          </CommandLineArgument>
       </CommandLineArguments>
       <AdditionalOptions>

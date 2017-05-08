@@ -1,25 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   errors.c                                           :+:      :+:    :+:   */
+/*   ft_arr_size.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: eignatye <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/04/17 18:45:13 by eignatye          #+#    #+#             */
-/*   Updated: 2017/04/17 18:45:17 by eignatye         ###   ########.fr       */
+/*   Created: 2016/12/02 12:27:35 by eignatye          #+#    #+#             */
+/*   Updated: 2017/05/05 20:40:19 by eignatye         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/fdf.h"
-#include <stdio.h>
+#include "libft.h"
 
-void	print_err(short err)
+size_t	ft_arr_size(char **arr)
 {
-	if (err == 1)
-		perror("Incorrect file path");
-	if (err == 2)
-		perror("Malloc error");
-	if (err == 3)
-		perror("Get line from file error");
-	exit(EXIT_FAILURE);
+	size_t		size;
+
+	size = 0;
+	if (arr && *arr)
+		while (arr[size])
+			size++;
+	return (size);
 }

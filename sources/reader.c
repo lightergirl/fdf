@@ -6,71 +6,91 @@
 /*   By: eignatye <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/17 18:45:13 by eignatye          #+#    #+#             */
-/*   Updated: 2017/05/04 20:25:48 by eignatye         ###   ########.fr       */
+/*   Updated: 2017/05/05 20:38:27 by eignatye         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/fdf.h"
 
-void		init_point(t_point *point, double x, double y, double z)
+void	init_point(t_point *point, double x, double y, double z)
 {
 	point->x = x;
 	point->y = y;
 	point->z = z;
 }
 
-t_map		*init_map(t_point **point_arr, double m_height, double m_weight)
+int		hex_to_int(char *hex)
 {
-	t_map	*map;
-
-	if (!(map = (t_map*)malloc(sizeof(t_map))))
-		print_err(MALLOC_ERR);
-	map->points_arr = point_arr;
-	map->m_height = m_height;
-	map->m_weight = m_weight;
-	return (map);
+	double	result;
+	int		i;
+	int		byte;
+	
+	i = HEX_LENGTH;
+	result = 0;
+	byte = 0;
+	while (--i >= 0)
+	{
+		byte = (int)hex[i];
+		if (ft_isdigit(byte))
+			byte = byte - '0';
+		if (ft_isalpha(byte))
+			if (ft_isupper(byte))
+				byte = byte - 'A' + 10;
+			if (ft_islower(byte))
+				byte = byte - 'a' + 10;
+		result += byte * pow(16.0, (double)(HEX_LENGTH - 1 - i));
+	}
+	return (result);
 }
 
-void		print_map(t_map *map)
+void	set_point(t_point *point, int i, int j, char *str)
 {
-	for (int i = 0; i < map->m_height; i++)
+	int		color;
+	char	*comma_ptr;
+	
+	init_point(point, i, j, ft_atoi(str));
+	point->color = WHITE_COLOR;
+	color = 0;
+	comma_ptr = ft_strchr(str, ',');
+	if (comma_ptr && (ft_strlen(++comma_ptr) == 8)
+		&& (!ft_strncmp(comma_ptr, "0x", 2)))
 	{
-		for (int j = 0; j < map->m_weight; j++)
-			printf ("%.1f:%.1f:%.1f\n", map->points_arr[i][j].x, map->points_arr[i][j].y, map->points_arr[i][j].z);
-		printf ("\n");
+		color = hex_to_int(comma_ptr + 2);
+		if (color && (color >= 0 && color <= WHITE_COLOR))
+			point->color = color;
+		else
+			point->color = WHITE_COLOR;
 	}
 }
 
-t_map		*cut_to_the_points(t_list **head, int list_size)
+void	cut_to_the_points(t_list **head, int list_size, t_map *map)
 {
-	t_map	*map;
 	t_list	*cur;
 	int		i;
 	int		j;
 	char	**arr;
-
-	if (!(map->points_arr = (t_point**)malloc(sizeof(t_point) * list_size)))
-		print_err(MALLOC_ERR);
+	
+	map->height = list_size;
 	cur = *head;
-	i = 0;
+	i = -1;
 	j = 0;
-	while (cur)
+	if (!(map->points_arr = (t_point**)malloc(sizeof(t_point) * map->height)))
+		print_err(MALLOC_ERR);
+	while (++i < list_size)
 	{
-		if (!(arr = ft_strsplit(cur->content, ' ')) ||
-		!(map->points_arr[i] =
-			(t_point*)malloc(sizeof(t_point) * ft_arr_size(arr))))
+		arr = ft_strsplit(cur->content, ' ');
+		map->weight = min(map->weight, ft_arr_size(arr));
+		if (!(map->points_arr[i] =
+			  (t_point*)malloc(sizeof(t_point) * map->weight)))
 			print_err(MALLOC_ERR);
 		j = -1;
 		while (arr[++j])
-			init_point(&(map->points_arr[i][j]), i, j, ft_atoi(arr[j]));
+			set_point(&(map->points_arr[i][j]), i, j, arr[j]);
 		cur = cur->next;
-		i++;
 	}
-	map = init_map(map->points_arr, i, j);
-	return (map);
 }
 
-t_map		*read_map(int fd)
+t_map	*read_map(int fd)
 {
 	t_map	*map;
 	char	*line;
@@ -79,6 +99,12 @@ t_map		*read_map(int fd)
 	short	gnl_return;
 
 	head = NULL;
+	// map init
+	if (!(map = (t_map*)malloc(sizeof(t_map))))
+		print_err(MALLOC_ERR);
+	map->height = 0;
+	map->weight = -1; //hack huiak
+	//read from file
 	while ((gnl_return = get_next_line(fd, &line)) == 1)
 	{
 		current = ft_lstnew(line, ft_strlen(line) * sizeof(char));
@@ -86,9 +112,8 @@ t_map		*read_map(int fd)
 	}
 	if (gnl_return == -1)
 		print_err(GNL_ERR);
-	if (!(map = cut_to_the_points(&head, ft_list_size(head))))
-		print_err(MALLOC_ERR);
+	cut_to_the_points(&head, ft_list_size(head), map);
+	//	print_err(MALLOC_ERR);
 	free(head);
-	print_map(map);
 	return (map);
 }

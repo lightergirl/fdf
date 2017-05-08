@@ -86,5 +86,8 @@ t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 void				ft_lstadd_to_end(t_list **head, t_list *list);
 int					ft_list_size(t_list *begin_list);
 size_t				ft_arr_size(char **arr);
+int					ft_power(int base, int pow);
+int					ft_isupper(int c);
+int					ft_islower(int c);
 
 #endif

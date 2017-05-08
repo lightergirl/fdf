@@ -1,25 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   errors.c                                           :+:      :+:    :+:   */
+/*   ft_islower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: eignatye <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/04/17 18:45:13 by eignatye          #+#    #+#             */
-/*   Updated: 2017/04/17 18:45:17 by eignatye         ###   ########.fr       */
+/*   Created: 2016/11/24 15:33:10 by eignatye          #+#    #+#             */
+/*   Updated: 2016/12/14 18:18:03 by eignatye         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/fdf.h"
-#include <stdio.h>
+#include "libft.h"
 
-void	print_err(short err)
+int	ft_islower(int c)
 {
-	if (err == 1)
-		perror("Incorrect file path");
-	if (err == 2)
-		perror("Malloc error");
-	if (err == 3)
-		perror("Get line from file error");
-	exit(EXIT_FAILURE);
+	if (c > 96 && c < 123)
+		return (1);
+	else
+		return (0);
 }
