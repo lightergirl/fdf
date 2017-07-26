@@ -12,16 +12,9 @@
 
 #include "../includes/fdf.h"
 
-void	init_point(t_point *point, double x, double y, double z)
-{
-	point->x = x;
-	point->y = y;
-	point->z = z;
-}
-
 int		hex_to_int(char *hex)
 {
-	double	result;
+	int     result;
 	int		i;
 	int		byte;
 	
@@ -30,7 +23,7 @@ int		hex_to_int(char *hex)
 	byte = 0;
 	while (--i >= 0)
 	{
-		byte = (int)hex[i];
+		byte = (int)(hex[i]);
 		if (ft_isdigit(byte))
 			byte = byte - '0';
 		if (ft_isalpha(byte))
@@ -38,7 +31,7 @@ int		hex_to_int(char *hex)
 				byte = byte - 'A' + 10;
 			if (ft_islower(byte))
 				byte = byte - 'a' + 10;
-		result += byte * pow(16.0, (double)(HEX_LENGTH - 1 - i));
+		result += byte * (int)pow(16.0, (double)(HEX_LENGTH - 1 - i));
 	}
 	return (result);
 }
@@ -46,47 +39,58 @@ int		hex_to_int(char *hex)
 void	set_point(t_point *point, int i, int j, char *str)
 {
 	int		color;
+	size_t	color_len;
 	char	*comma_ptr;
+	char	*color_ptr;
+	int		it;
 	
 	init_point(point, i, j, ft_atoi(str));
 	point->color = WHITE_COLOR;
 	color = 0;
+	it = 0;
+	color_ptr = ft_strnew(6);
 	comma_ptr = ft_strchr(str, ',');
-	if (comma_ptr && (ft_strlen(++comma_ptr) == 8)
-		&& (!ft_strncmp(comma_ptr, "0x", 2)))
+	if (comma_ptr && (!ft_strncmp(++comma_ptr, "0x", 2)))
 	{
-		color = hex_to_int(comma_ptr + 2);
-		if (color && (color >= 0 && color <= WHITE_COLOR))
+		if ((color_len = ft_strlen(comma_ptr + 2)) < 6)
+			while (it + color_len != HEX_LENGTH)
+				color_ptr[it++] = '0';
+		ft_strncpy(&color_ptr[it], comma_ptr + 2, color_len);
+		color = hex_to_int(color_ptr);
+		if (color >= 0 && color < WHITE_COLOR)
 			point->color = color;
-		else
-			point->color = WHITE_COLOR;
 	}
+	free(color_ptr);
 }
 
 void	cut_to_the_points(t_list **head, int list_size, t_map *map)
 {
 	t_list	*cur;
-	int		i;
-	int		j;
+	size_t	i;
+	size_t	j;
 	char	**arr;
 	
 	map->height = list_size;
 	cur = *head;
-	i = -1;
+	i = 0;
 	j = 0;
-	if (!(map->points_arr = (t_point**)malloc(sizeof(t_point) * map->height)))
-		print_err(MALLOC_ERR);
-	while (++i < list_size)
+	if (!(map->points_arr = (t_point**)malloc(sizeof(t_point*) * map->height)))
+		print_err("Malloc error");
+	while (i < map->height)
 	{
 		arr = ft_strsplit(cur->content, ' ');
-		map->weight = min(map->weight, ft_arr_size(arr));
+		map->width= min(map->width, ft_arr_size(arr));
 		if (!(map->points_arr[i] =
-			  (t_point*)malloc(sizeof(t_point) * map->weight)))
-			print_err(MALLOC_ERR);
-		j = -1;
-		while (arr[++j])
+			  (t_point*)malloc(sizeof(t_point) * map->width)))
+			print_err("Malloc error");
+		j = 0;
+		while (j < map->width)
+		{
 			set_point(&(map->points_arr[i][j]), i, j, arr[j]);
+			j++;
+		}
 		cur = cur->next;
+		i++;
 	}
 }
 
@@ -99,21 +103,19 @@ t_map	*read_map(int fd)
 	short	gnl_return;
 
 	head = NULL;
-	// map init
 	if (!(map = (t_map*)malloc(sizeof(t_map))))
-		print_err(MALLOC_ERR);
+		print_err("Malloc error");
 	map->height = 0;
-	map->weight = -1; //hack huiak
-	//read from file
+	map->width = -1; /*hack huiak*/
 	while ((gnl_return = get_next_line(fd, &line)) == 1)
 	{
 		current = ft_lstnew(line, ft_strlen(line) * sizeof(char));
 		ft_lstadd_to_end(&head, current);
 	}
 	if (gnl_return == -1)
-		print_err(GNL_ERR);
+		print_err("Get line from file error");
 	cut_to_the_points(&head, ft_list_size(head), map);
-	//	print_err(MALLOC_ERR);
+    //add list_free() for head list
 	free(head);
 	return (map);
 }

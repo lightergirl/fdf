@@ -13,13 +13,8 @@
 #include "../includes/fdf.h"
 #include <stdio.h>
 
-void	print_err(short err)
+void	print_err(char *error_msg)
 {
-	if (err == 1)
-		perror("Incorrect file path");
-	if (err == 2)
-		perror("Malloc error");
-	if (err == 3)
-		perror("Get line from file error");
+	perror(error_msg);
 	exit(EXIT_FAILURE);
 }

@@ -13,42 +13,23 @@
 #include "../includes/fdf.h"
 #include <stdio.h>
 
-void		print_map(t_map *map)
-{
-	for (size_t i = 0; i < map->height; i++)
-	{
-		for (size_t j = 0; j < map->weight; j++)
-			printf ("%.1f:%.1f:%.1f:col=%d\t\t", map->points_arr[i][j].x, map->points_arr[i][j].y, map->points_arr[i][j].z, map->points_arr[i][j].color);
-		printf ("\n");
-	}
-}
-
 int main(int ac, char **av)
 {
 	t_map	*map;
+	t_fdf	*m_fdf;
 	int		fd;
 
-	if (ac == 2)
-	{	
-		if ((fd = open(av[1], O_RDONLY)) == -1)
-		{
-			print_err(FILEPATH_ERR);
-			exit(0);
-		}
-		map = read_map(fd);
-		close(fd);
-		print_map(map);
-		map->init = mlx_init();
-		map->window = mlx_new_window(map->init, WINSIZE_X, WINSIZE_Y, "fdf");
-		draw_map(map);
-		mlx_loop(map->init);
-		
-		int i = 0;
-		while (++i < 100)
-			mlx_pixel_put(map->init, map->window, i, 1, 0x00FFFFFF);//does't draw((
-		free(map);
-	}
-	else
-		ft_putstr("Usage: ./fdf <filename>\n");
+	if (ac != 2)
+		print_err("Usage: ./fdf <filename>\n");
+	if (!(m_fdf = (t_fdf *)malloc(sizeof(t_fdf))))
+		print_err("Malloc error");
+	if ((fd = open(av[1], O_RDONLY)) == -1)
+		print_err("Incorrect file path");
+	map = read_map(fd);
+	close(fd);
+	fdf_init(m_fdf, map);
+	draw_image(m_fdf);
+	mlx_hook(m_fdf->window, 2, 5, key_hook, (void*)m_fdf);
+	mlx_loop(m_fdf->init);
 	return (0);
 }
