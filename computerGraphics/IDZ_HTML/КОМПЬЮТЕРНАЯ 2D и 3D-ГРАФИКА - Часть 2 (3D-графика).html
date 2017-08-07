@@ -1,0 +1,337 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0032)http://kompgraflab.ru/page12.php -->
+<html data-livestyle-extension="available"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" async="" src="./КОМПЬЮТЕРНАЯ 2D и 3D-ГРАФИКА - Часть 2 (3D-графика)_files/whoami"></script>
+
+<title>КОМПЬЮТЕРНАЯ 2D и 3D-ГРАФИКА - Часть 2 (3D-графика)</title>
+<meta name="DESCRIPTION" content="">
+<meta name="KEYWORDS" content="">
+<meta name="GENERATOR" content="Parallels Plesk Sitebuilder 4.5.0">
+</head>
+<body class="pageContent"><div align="center"><span style="text-transform: uppercase; font-size: 14pt">Часть 2</span></div>
+<div style="text-align: center; line-height: normal" align="center"><font size="5">3D – ГРАФИКА</font></div>
+<div style="text-align: center; line-height: normal" align="center">&nbsp;</div>
+<div align="center"><b><span style="text-transform: uppercase; font-size: 12pt">Основные&nbsp;теоретические&nbsp;сведения&nbsp;по&nbsp;трехмерной &nbsp;графике</span></b></div>
+<div style="text-align: center; line-height: normal" align="center">&nbsp;</div>
+<div style="text-align: center; line-height: normal" align="center"><b><span style="font-size: 12pt">1. &nbsp;Системы &nbsp;3</span></b><b><span style="font-size: 12pt">D</span></b><b><span style="font-size: 12pt">-координат</span></b></div>
+<div style="line-height: normal; text-indent: 14.2pt">&nbsp;</div>
+<div style="text-align: justify; text-indent: 14.2pt"><b><span style="color: black"><font size="2">Декартовые системы координат.</font></span></b></div>
+<div style="text-align: justify; text-indent: 14.2pt"><span style="color: black"><font size="2">Декартовыми прямоугольными координатами</font></span><span style="color: black"><font size="2"> точки P в трехмерном пространстве называются взятые с определенным знаком расстояния (выраженные в единицах масштаба) этой точки до трех взаимно перпендикулярных координатных плоскостей или, что то же самое, проекции радиус-вектора <b>r</b> точки P на три взаимно перпендикулярные координатные оси. </font></span></div>
+<div style="text-align: justify; text-indent: 14.2pt"><span style="color: black"><font size="2">В зависимости от взаимного расположения положительных направлений координатных осей возможны </font><font size="2">левая</font><font size="2"> и </font><font size="2">правая</font><font size="2"> координатные системы (рис. 1, 2).</font></span></div>
+<div style="text-align: justify; text-indent: 14.2pt"><font size="2">Как правило, пользуются правой координатной системой. Положительные направления выбирают: на оси OX - на наблюдателя; на оси OY - вправо; на оси OZ - вверх. Координаты x, y, z называются соответственно абсциссой, ординатой и аппликатой. Координатными поверхностями, для которых одна из координат остается постоянной, здесь являются плоскости, параллельные координатным плоскостям, а координатными линиями, вдоль которых меняется только одна координата, - прямые, параллельные координатным осям. Координатные поверхности пересекаются по координатным линиям. Запись P(a,b,c) означает, что точка Q имеет абсциссу a, ординату b и аппликату c.</font></div>
+<div style="text-align: justify; text-indent: 14.2pt">&nbsp;</div>
+<div style="text-align: center; text-indent: 14.2pt">&nbsp;<img alt="" width="522" height="218" src="./КОМПЬЮТЕРНАЯ 2D и 3D-ГРАФИКА - Часть 2 (3D-графика)_files/ris1_teor2.jpg"></div>
+<div style="text-align: justify; text-indent: 14.2pt">&nbsp;</div>
+<div align="center"><font size="2">Рисунок 1 - Левая координатная система&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Рисунок 2 - Правая координатная система</font></div>
+<div>&nbsp;</div>
+<div style="text-align: justify; text-indent: 14.2pt"><b><span style="color: black"><font size="2">Цилиндрическая система координат.</font></span></b></div>
+<div style="text-align: justify; text-indent: 14.2pt"><font size="2"><span style="color: black">Для цилиндрических координат координатными поверхностями являются плоскости, перпендикулярные к оси O</span><span style="color: black">Z</span><span style="color: black"> (z=const), полуплоскости, ограниченные осью </span><span style="color: black">Z</span><span style="color: black"> (φ=const) и цилиндрические поверхности, осью которых является ось </span><span style="color: black">Z</span><span style="color: black"> (ρ=const). Координатные линии - линии пересечения этих поверхностей. ρ и φ - полярные координаты проекции точки P на основную плоскость (обычно </span><span style="color: black">X</span><span style="color: black">O</span><span style="color: black">Y</span><span style="color: black">), z - аппликата - расстояние от точки P до основной плоскости (рис.3).</span></font></div>
+<div style="text-align: justify; text-indent: 14.2pt"><span style="color: black"><font size="2">Формулы для перехода от цилиндрических координат к декартовым:</font></span></div>
+<div style="text-align: justify; margin: 0cm 0cm 0pt 2cm"><span style="color: black"><font size="2">x=ρ*cos(φ)</font></span></div>
+<div style="text-align: justify; margin: 0cm 0cm 0pt 2cm"><span style="color: black"><font size="2">y=ρ*sin(φ)</font></span></div>
+<div style="text-align: justify; margin: 0cm 0cm 0pt 2cm"><span style="color: black"><font size="2">z=z</font></span></div>
+<div><span style="color: black"><font size="2">и обратно:</font></span></div>
+<div style="text-align: justify; margin: 0cm 0cm 0pt 2cm"><span style="color: black"><font size="2">ρ=sqrt(x<sup>2</sup>+y<sup>2</sup>)</font></span></div>
+<div style="text-align: justify; margin: 0cm 0cm 0pt 2cm"><font size="2"><span style="color: black">φ</span><span style="color: black">=arctg(y/x)=arcsin(y/</span><span style="color: black">ρ</span><span style="color: black">)</span></font></div>
+<div>&nbsp;</div>
+<div style="text-align: center">&nbsp;<img alt="" width="229" height="221" src="./КОМПЬЮТЕРНАЯ 2D и 3D-ГРАФИКА - Часть 2 (3D-графика)_files/ris3_teor2.jpg"></div>
+<div>&nbsp;</div>
+<div align="center"><font size="2">Рисунок 3 - Цилиндрическая система координат</font></div>
+<div>&nbsp;</div>
+<div style="text-align: justify; text-indent: 14.2pt"><b><span style="color: black"><font size="2">Сферическая система координат.</font></span></b></div>
+<div style="text-align: justify; text-indent: 14.2pt"><span style="color: black"><font size="2">Пусть заданы: r - длина радиус-вектора, φ - долгота, θ - полярное расстояние. Положительные направления отсчета показаны на рисунке 4. Если присваивать сферическим координатам значения в следующих пределах:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0 ≤ r &lt; ∞</font></span></div>
+<div style="text-align: justify; text-indent: 3cm"><span style="color: black"><font size="2">-π &lt; φ ≤ π</font></span></div>
+<div style="text-align: justify; text-indent: 3cm"><font size="2"><span style="color: black">&nbsp;</span><span style="color: black">0 ≤ θ ≤ π</span></font></div>
+<div><span style="color: black"><font size="2">то получаются однозначно все точки пространства.</font></span></div>
+<div style="text-align: justify; text-indent: 14.2pt"><span style="color: black"><font size="2">Координатные поверхности: </font></span></div>
+<div style="text-align: justify; text-indent: 14.2pt"><span style="color: black"><font size="2">- сферы с центром в начале (r=const);</font></span></div>
+<div style="text-align: justify; text-indent: 14.2pt"><span style="color: black"><font size="2">- полуплоскости, ограниченные осью z (φ=const);</font></span></div>
+<div style="text-align: justify; text-indent: 14.2pt"><span style="color: black"><font size="2">- конусы (с вершиной в начале), для которых ось z является осью (θ=const). </font></span></div>
+<div style="text-align: justify; text-indent: 14.2pt"><span style="color: black"><font size="2">Координатные линии - линии пересечения этих поверхностей. </font></span></div>
+<div style="text-align: justify; text-indent: 14.2pt"><span style="color: black"><font size="2">Формулы перехода от сферических координат к декартовым:</font></span></div>
+<div style="text-align: justify; text-indent: -0.9pt; margin: 0cm 0cm 0pt 3cm"><font size="2"><span style="color: black">x=r*sin(</span><span style="color: black">θ</span><span style="color: black">)*cos(</span><span style="color: black">φ</span><span style="color: black">)</span></font></div>
+<div style="text-align: justify; text-indent: -0.9pt; margin: 0cm 0cm 0pt 3cm"><font size="2"><span style="color: black">y=r*sin(</span><span style="color: black">θ</span><span style="color: black">)*sin(</span><span style="color: black">φ</span><span style="color: black">)</span></font></div>
+<div style="text-align: justify; text-indent: -0.9pt; margin: 0cm 0cm 0pt 3cm"><font size="2"><span style="color: black">z</span><span style="color: black">=</span><span style="color: black">r</span><span style="color: black">*</span><span style="color: black">cos</span><span style="color: black">(φ)</span></font></div>
+<div style="text-align: justify; text-indent: 14.2pt"><span style="color: black"><font size="2">и обратно:</font></span></div>
+<div style="text-align: justify; margin: 0cm 0cm 0pt 3cm"><span style="color: black"><font size="2">r=sqrt(x<sup>2</sup>+y<sup>2</sup>+z<sup>2</sup>)</font></span></div>
+<div style="text-align: justify; margin: 0cm 0cm 0pt 3cm"><font size="2"><span style="color: black">φ</span><span style="color: black">=arctg(y/x)</span></font></div>
+<div style="text-align: justify; margin: 0cm 0cm 0pt 3cm"><font size="2"><span style="color: black">φ</span><span style="color: black">=arctg(sqrt((x<sup>2</sup>+y<sup>2</sup>)/z))</span></font></div>
+<div>&nbsp;</div>
+<div style="text-align: center">&nbsp;<img alt="" width="233" height="230" src="./КОМПЬЮТЕРНАЯ 2D и 3D-ГРАФИКА - Часть 2 (3D-графика)_files/ris4_teor2.jpg"></div>
+<div>&nbsp;</div>
+<div align="center"><font size="2">Рисунок 4 - Сферическая система координат</font></div>
+<div style="text-align: justify; text-indent: 14.2pt">&nbsp;</div>
+<div align="center"><b><span style="font-size: 12pt">2&nbsp;Форматы &nbsp;описания &nbsp;объектов</span></b></div>
+<div style="text-align: justify; text-indent: 14.2pt">&nbsp;</div>
+<div style="text-align: justify; text-indent: 14.2pt"><font size="2">Под форматом описания объектов понимается способ задания его местоположения в пространстве в математической форме.</font></div>
+<div style="text-align: justify; text-indent: 14.2pt"><font size="2">В свою очередь, описание самого пространства зависит от принятой системы координат. Для однородной трехмерной системы координат, наиболее распространенной в компьютерной графике, принято задавать координаты в виде матрицы, размером&nbsp;n × 4, например:</font></div>
+<div style="text-align: justify; text-indent: 14.2pt">&nbsp;</div>
+<div style="text-align: center; text-indent: 14.2pt"><img alt="" width="161" height="95" src="./КОМПЬЮТЕРНАЯ 2D и 3D-ГРАФИКА - Часть 2 (3D-графика)_files/form_teor2.jpg">&nbsp;</div>
+<div style="text-align: justify; text-indent: 14.2pt">&nbsp;&nbsp;</div>
+<div style="text-align: justify; text-indent: 14.2pt"><font size="2">Здесь, параметры матрицы&nbsp;<b>x,&nbsp;</b><b>y</b>,&nbsp;и&nbsp;<b>z</b>&nbsp;– это координаты вершин объекта по осям&nbsp;<b>X</b>,&nbsp;<b>Y</b>,&nbsp;и&nbsp;<b>Z</b>. Поэтому, количество строк матрицы координат будет соответствовать количеству вершин объекта. Четвертый, дополнительный параметр, равный здесь единице, является масштабирующим множителем, принятым для однородной системы координат.</font></div>
+<div style="text-align: justify; text-indent: 14.2pt"><font size="2">В современных видеопроектах, работающих в режиме реального времени и использующих насыщенные 3D–сцены, скорость обработки координат объектов, задаваемых в матричной форме, перестала удовлетворять предъявляемым требованиям, даже с применением специальных аппаратных средств. Для ускорения скорости обработки координат объектов применяется сферическая система координат, а формат описания его вершин является векторным.</font></div>
+<div style="text-align: justify; text-indent: 14.2pt"><font size="2">В компьютерной графике, при использовании векторного представления точек принято дополнительно задавать их направление вращения, такие векторы называются кватернионами.</font></div>
+<div style="text-align: justify; text-indent: 14.2pt"><font size="2">Кватернион, он же гиперкомплексное число, представляет собой набор четырех чисел.</font></div>
+<div style="text-align: justify; text-indent: 14.2pt"><font size="2">Имеются различные варианты представления кватернионов: как 4D-вектор, как набор четырех чисел, как число и 3D-вектор, как гиперкомплексное число с тремя мнимыми единицами i, j, k. </font></div>
+<div style="text-align: justify; text-indent: 14.2pt"><font size="2">Таким образом, имеем следующие способы представления кватернионов:</font></div>
+<div style="text-align: justify; text-indent: 14.2pt">&nbsp;</div>
+<div style="text-align: justify; text-indent: 70.9pt"><font size="2">q = [x1, x2, x3, x4] = [scalar,(vector)] = [x1,(x2, x3, x4)] = x1+x2*i+x3*j+x4*k</font></div>
+<div style="text-align: justify; text-indent: 18pt"><br>
+&nbsp;</div>
+<div align="center"><b><span style="font-size: 12pt">3&nbsp;Матричные&nbsp;видовые &nbsp;преобразования &nbsp;объектов</span></b></div>
+<div style="text-align: justify; text-indent: 14.2pt">&nbsp;</div>
+<div style="text-indent: 14.2pt"><span style="color: black; font-size: 10pt">Под базовыми видовыми преобразованиями трехмерных объектов подразумеваются преобразования, которые можно выполнить за один шаг с помощью конкретной матрицы видового преобразования.</span></div>
+<div style="line-height: normal; text-indent: 14.75pt"><span style="font-size: 10pt">Математически преобразование исходных координат объекта с помощью матрицы видового преобразования производится по формуле:</span></div>
+<div style="line-height: normal; text-indent: 14.75pt">&nbsp;</div>
+<div style="text-align: justify; text-indent: 155.35pt; margin: 0cm 0cm 0pt 0.6pt"><span style="color: black; font-size: 12pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; М<sub>исх</sub> × Т<sub>пр</sub> = М<sub>рез</sub> </span><span style="color: black"><font size="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(1)</font></span></div>
+<div style="text-align: justify; text-indent: 155.35pt; margin: 0cm 0cm 0pt 0.6pt">&nbsp;</div>
+<div style="text-align: justify; text-indent: 14.2pt"><b><span style="color: black; font-size: 12pt">М<sub>исх</sub></span></b><span style="color: black"><font size="2"> - это матрица исходных координат графической фигуры, и после преобразования она приобретает вид:</font></span></div>
+<div style="text-align: justify; text-indent: 14.2pt">&nbsp;</div>
+<div style="text-align: center; text-indent: 14.2pt">&nbsp;<img alt="" width="548" height="91" src="./КОМПЬЮТЕРНАЯ 2D и 3D-ГРАФИКА - Часть 2 (3D-графика)_files/form2_teor2.jpg"></div>
+<div style="text-align: justify; text-indent: 14.2pt">&nbsp;</div>
+<div style="text-indent: 14.2pt"><span style="color: black; font-size: 10pt">Матрица видового преобразования&nbsp;</span><b><span style="color: black; font-size: 12pt">Т<sub>пр</sub></span></b><span style="color: black; font-size: 10pt">&nbsp;в общем виде имеет следующее представление:</span></div>
+<div style="text-indent: 14.2pt">&nbsp;</div>
+<div style="text-align: center; text-indent: 14.2pt">&nbsp;<img alt="" width="451" height="91" src="./КОМПЬЮТЕРНАЯ 2D и 3D-ГРАФИКА - Часть 2 (3D-графика)_files/form3_teor2.jpg"></div>
+<div style="text-indent: 14.2pt">&nbsp;</div>
+<div style="text-indent: 14.2pt"><span style="color: black; font-size: 10pt">Здесь каждый параметр матрицы отвечает за свой, и только свой вид преобразования.</span></div>
+<div style="text-indent: 14.2pt"><span style="color: black; font-size: 10pt">Различают следующие виды преобразования графических обьектов:</span></div>
+<div><span style="color: black; font-size: 10pt">- перенос (параметры&nbsp;</span><i><span style="color: black; font-size: 10pt">l</span></i><i><span style="color: black; font-size: 10pt">, </span></i><i><span style="color: black; font-size: 10pt">m</span></i><i><span style="color: black; font-size: 10pt">, </span></i><i><span style="color: black; font-size: 10pt">n</span></i><span style="color: black; font-size: 10pt">);</span></div>
+<div><span style="color: black; font-size: 10pt">- масштабирование (параметры&nbsp;</span><i><span style="color: black; font-size: 10pt">a</span></i><i><span style="color: black; font-size: 10pt">, </span></i><i><span style="color: black; font-size: 10pt">e</span></i><i><span style="color: black; font-size: 10pt">, </span></i><i><span style="color: black; font-size: 10pt">i</span></i><i><span style="color: black; font-size: 10pt">, </span></i><i><span style="color: black; font-size: 10pt">s</span></i><span style="color: black; font-size: 10pt">);</span></div>
+<div style="margin: 0cm -14.25pt 0pt 0cm"><span style="color: black; font-size: 10pt">- зеркальное отображение относительно осей или начала координат (параметры&nbsp;</span><i><span style="color: black; font-size: 10pt">a</span></i><i><span style="color: black; font-size: 10pt">, </span></i><i><span style="color: black; font-size: 10pt">e</span></i><i><span style="color: black; font-size: 10pt">, </span></i><i><span style="color: black; font-size: 10pt">i</span></i><i><span style="color: black; font-size: 10pt">, </span></i><i><span style="color: black; font-size: 10pt">s</span></i><span style="color: black; font-size: 10pt">);</span></div>
+<div><span style="color: black; font-size: 10pt">- сдвиг (параметры&nbsp;</span><i><span style="color: black; font-size: 10pt">b</span></i><i><span style="color: black; font-size: 10pt">, </span></i><i><span style="color: black; font-size: 10pt">c</span></i><i><span style="color: black; font-size: 10pt">, </span></i><i><span style="color: black; font-size: 10pt">d</span></i><i><span style="color: black; font-size: 10pt">,&nbsp; </span></i><i><span style="color: black; font-size: 10pt">f</span></i><i><span style="color: black; font-size: 10pt">, </span></i><i><span style="color: black; font-size: 10pt">g</span></i><i><span style="color: black; font-size: 10pt">, </span></i><i><span style="color: black; font-size: 10pt">h</span></i><span style="color: black; font-size: 10pt">);</span></div>
+<div><span style="color: black; font-size: 10pt">- проецирование (параметры&nbsp;</span><i><span style="color: black; font-size: 10pt">p</span></i><i><span style="color: black; font-size: 10pt">, </span></i><i><span style="color: black; font-size: 10pt">q</span></i><i><span style="color: black; font-size: 10pt">, </span></i><i><span style="color: black; font-size: 10pt">r</span></i><span style="color: black; font-size: 10pt">);</span></div>
+<div><span style="color: black; font-size: 10pt">- вращение вокруг осей координат (параметры&nbsp;</span><i><span style="color: black; font-size: 10pt">a</span></i><i><span style="color: black; font-size: 10pt">, </span></i><i><span style="color: black; font-size: 10pt">b</span></i><i><span style="color: black; font-size: 10pt">, </span></i><i><span style="color: black; font-size: 10pt">c</span></i><i><span style="color: black; font-size: 10pt">, </span></i><i><span style="color: black; font-size: 10pt">d</span></i><i><span style="color: black; font-size: 10pt">, </span></i><i><span style="color: black; font-size: 10pt">e</span></i><i><span style="color: black; font-size: 10pt">, </span></i><i><span style="color: black; font-size: 10pt">f</span></i><i><span style="color: black; font-size: 10pt">, </span></i><i><span style="color: black; font-size: 10pt">g</span></i><i><span style="color: black; font-size: 10pt">, </span></i><i><span style="color: black; font-size: 10pt">h</span></i><i><span style="color: black; font-size: 10pt">, </span></i><i><span style="color: black; font-size: 10pt">i</span></i><span style="color: black; font-size: 10pt">).</span></div>
+<div style="text-indent: 14.2pt"><span style="color: black; font-size: 10pt">Ниже мы подробно рассмотрим работу этих параметров в составе матрицы преобразования.</span></div>
+<div style="text-indent: 14.2pt">&nbsp;</div>
+<div style="text-indent: 14.2pt"><b><span style="color: black; font-size: 10pt">Перенос.</span></b></div>
+<div style="text-indent: 14.2pt"><span style="color: black; font-size: 10pt">Матрица пространственного переноса трехмерных объектов образуется из матрицы преобразования общего вида (3) и выглядит следующим образом:</span></div>
+<div style="text-indent: 14.2pt">&nbsp;</div>
+<div style="text-align: center; text-indent: 14.2pt">&nbsp;<img alt="" width="479" height="91" src="./КОМПЬЮТЕРНАЯ 2D и 3D-ГРАФИКА - Часть 2 (3D-графика)_files/form4_teor2.jpg"></div>
+<div style="text-align: left; line-height: normal; margin: 0cm 0cm 0pt 14.2pt" align="left">&nbsp;</div>
+<div style="text-indent: 14.2pt"><span style="font-size: 10pt">Здесь, элементы главной диагонали приравниваются к единице: </span><b><i><span style="font-size: 10pt">a</span></i></b><b><i><span style="font-size: 10pt">=</span></i></b><b><i><span style="font-size: 10pt">e</span></i></b><b><i><span style="font-size: 10pt">=</span></i></b><b><i><span style="font-size: 10pt">i</span></i></b><b><i><span style="font-size: 10pt">=</span></i></b><b><i><span style="font-size: 10pt">s</span></i></b><b><span style="font-size: 10pt">=1</span></b><span style="font-size: 10pt">. Элементы &nbsp;</span><b><i><span style="font-size: 10pt">b</span></i></b><b><i><span style="font-size: 10pt">, </span></i></b><b><i><span style="font-size: 10pt">c</span></i></b><b><i><span style="font-size: 10pt">, </span></i></b><b><i><span style="font-size: 10pt">p</span></i></b><b><i><span style="font-size: 10pt">, </span></i></b><b><i><span style="font-size: 10pt">d</span></i></b><b><i><span style="font-size: 10pt">, </span></i></b><b><i><span style="font-size: 10pt">f</span></i></b><b><i><span style="font-size: 10pt">, </span></i></b><b><i><span style="font-size: 10pt">q</span></i></b><b><i><span style="font-size: 10pt">, </span></i></b><b><i><span style="font-size: 10pt">g</span></i></b><b><i><span style="font-size: 10pt">, </span></i></b><b><i><span style="font-size: 10pt">h</span></i></b><b><i><span style="font-size: 10pt">, </span></i></b><b><i><span style="font-size: 10pt">r</span></i></b><span style="font-size: 10pt">&nbsp; приравниваются к нулю.</span></div>
+<div style="line-height: normal; text-indent: 14.2pt"><span style="font-size: 10pt">Параметры &nbsp;</span><b><i><span style="font-size: 10pt">l</span></i></b><b><i><span style="font-size: 10pt">, </span></i></b><b><i><span style="font-size: 10pt">m</span></i></b><b><i><span style="font-size: 10pt">, </span></i></b><b><i><span style="font-size: 10pt">n</span></i></b><span style="font-size: 10pt">– параметры переноса. Они отвечают за перенос трехмерных объектов вдоль главных осей координат </span><b><span style="font-size: 10pt">X</span></b><b><span style="font-size: 10pt">, </span></b><b><span style="font-size: 10pt">Y</span></b><b><span style="font-size: 10pt">, </span></b><b><span style="font-size: 10pt">Z</span></b><span style="font-size: 10pt"> соответственно. Если параметры "включены", то это любые вещественные числа, если "выключены", то равны нулю. Произвольная точка пространства &nbsp;</span><b><span style="color: black; font-size: 10pt">A</span></b><b><span style="color: black; font-size: 10pt">(</span></b><b><span style="color: black; font-size: 10pt">x</span></b><b><span style="color: black; font-size: 10pt">, </span></b><b><span style="color: black; font-size: 10pt">y</span></b><b><span style="color: black; font-size: 10pt">, </span></b><b><span style="color: black; font-size: 10pt">z</span></b><b><span style="color: black; font-size: 10pt">)</span></b><span style="font-size: 10pt"> &nbsp;преобразуется с помощью матрицы (4) к виду:</span></div>
+<div style="line-height: normal; text-indent: 14.2pt">&nbsp;</div>
+<div style="text-align: center; line-height: normal; text-indent: 14.2pt"><img alt="" width="490" height="96" src="./КОМПЬЮТЕРНАЯ 2D и 3D-ГРАФИКА - Часть 2 (3D-графика)_files/form5_teor2.jpg">&nbsp;</div>
+<div style="line-height: normal; text-indent: 14.2pt">&nbsp;</div>
+<div style="text-align: justify; text-indent: 14.2pt"><font size="2">Из соотношения (5) видно, что в результате выполнения операции переноса к координатам исходной точки A прибавляются параметры переноса <b><i>l, </i></b><b><i>m, </i></b><b><i>n</i></b>. Характерной особенностью операции переноса является то, что в результате ее действия форма и размеры исходных объектов остаются неизменными. Из этого же соотношения видно, что перенос выполняется в трехмерной системе координат. Однако исходные и преобразованные в результате переноса объекты должны быть представлены на картинной плоскости, в частности на экране монитора персонального компьютера в двумерной системе координат. При этом объекты должны выглядеть объемными.</font></div>
+<div style="text-align: justify; text-indent: 14.2pt"><font size="2">Эта не простая задача решается с помощью различного вида проекций, таких как аксонометрические, косоугольные, перспективные. С учетом проектирования трехмерный перенос становится многошаговой задачей, которая может быть решена за один шаг, если предварительно получить аналитическое выражение результирующей матрицы. Результирующие матрицы получают последовательным перемножением всех матриц, участвовавших в каждом шаге видовых преобразований.</font></div>
+<div style="line-height: normal; text-indent: 14.2pt">&nbsp;</div>
+<div style="text-align: justify; text-indent: 14.2pt"><b><span style="color: black"><font size="2">Масштабирование.</font></span></b></div>
+<div style="text-align: justify; text-indent: 14.2pt"><font size="2"><span style="color: black">Матрица трехмерного масштабирования образуется из матрицы общего вида (3) следующим образом. Все элементы матрицы (3), кроме элементов главной диагонали, приравниваются к нулю.</span></font></div>
+<div style="text-align: justify; text-indent: 14.2pt">&nbsp;</div>
+<div style="text-align: center; text-indent: 14.2pt">&nbsp;<img alt="" width="505" height="90" src="./КОМПЬЮТЕРНАЯ 2D и 3D-ГРАФИКА - Часть 2 (3D-графика)_files/form6_teor2.jpg"></div>
+<div style="text-align: justify; text-indent: 14.2pt">&nbsp;</div>
+<div style="text-align: justify; text-indent: 14.2pt"><font size="2"><span style="color: black">В матрице (6) &nbsp;</span><b><i><span style="color: black">a</span><span style="color: black">, </span></i></b><b><i><span style="color: black">e</span><span style="color: black">, </span></i></b><b><i><span style="color: black">i</span><span style="color: black">, </span></i></b><b><i><span style="color: black">s</span></i></b><span style="color: black">- параметры масштабирования.&nbsp;Если они "включены", то это любые положительные вещественные числа, если "выключены", то равны единице. Произвольная пространственная точка &nbsp;</span><b><span style="color: black">A</span><span style="color: black">(</span></b><b><span style="color: black">x</span><span style="color: black">, </span></b><b><span style="color: black">y</span><span style="color: black">, </span></b><b><span style="color: black">z</span><span style="color: black">)</span></b><span style="color: black"> &nbsp;с помощью матрицы (6) преобразуется к виду:</span></font></div>
+<div style="text-align: justify; text-indent: 14.2pt">&nbsp;</div>
+<div style="text-align: center; text-indent: 14.2pt"><img alt="" width="586" height="126" src="./КОМПЬЮТЕРНАЯ 2D и 3D-ГРАФИКА - Часть 2 (3D-графика)_files/form7_teor2.jpg">&nbsp;</div>
+<div style="text-align: justify; text-indent: 14.2pt">&nbsp;&nbsp;</div>
+<div style="text-align: justify; line-height: normal; text-indent: 14.2pt"><span style="color: black; font-size: 10pt">Из соотношения (7) следует, что координата &nbsp;</span><b><span style="color: black; font-size: 10pt">x</span></b><span style="color: black; font-size: 10pt">&nbsp;исходного объекта изменяется прямо пропорционально параметру масштабирования &nbsp;</span><b><i><span style="color: black; font-size: 10pt">a</span></i></b><span style="color: black; font-size: 10pt">, координата &nbsp;</span><b><span style="color: black; font-size: 10pt">y</span></b><span style="color: black; font-size: 10pt"> &nbsp;</span><span style="color: black; font-size: 10pt">изменяется прямо пропорционально параметру </span><b><i><span style="color: black; font-size: 10pt">e</span></i></b><span style="color: black; font-size: 10pt">, координата </span><b><span style="color: black; font-size: 10pt">z</span></b><span style="color: black; font-size: 10pt"> - прямо пропорционально параметру </span><b><i><span style="color: black; font-size: 10pt">i</span></i></b><span style="color: black; font-size: 10pt">. Если эти параметры больше единицы, размеры преобразуемого объекта увеличиваются по соответствующим осям, если указанные параметры меньше единицы - уменьшаются. Параметр &nbsp;</span><b><i><span style="color: black; font-size: 10pt">s</span></i></b><span style="color: black; font-size: 10pt"> &nbsp;</span><span style="color: black; font-size: 10pt">изменяет размеры преобразуемого объекта по трем осям одновременно обратно пропорционально своей величине. Если он больше единицы, объект уменьшается по размеру, если меньше - увеличивается.</span></div>
+<div style="text-align: justify; text-indent: 45.1pt">&nbsp;</div>
+<div style="text-align: justify; text-indent: 14.2pt"><b><font size="2">Отображение.</font></b></div>
+<div style="text-align: justify; text-indent: 14.2pt"><font size="2">Матрица отображения трехмерных объектов образуется из матрицы общего вида (3) следующим образом. Все элементы матрицы (3), кроме элементов главной диагонали, приравниваются к нулю.</font></div>
+<div style="text-align: justify; text-indent: 14.2pt">&nbsp;</div>
+<div style="text-align: center; text-indent: 14.2pt">&nbsp;<img alt="" width="517" height="91" src="./КОМПЬЮТЕРНАЯ 2D и 3D-ГРАФИКА - Часть 2 (3D-графика)_files/form8_teor2.jpg"></div>
+<div style="text-align: justify; text-indent: 14.2pt">&nbsp;</div>
+<div style="text-align: justify; text-indent: 14.2pt"><span style="color: black"><font size="2">Сравнивая полученную матрицу отображения (8) с ранее полученной матрицей масштабирования (6), видим, что они одинаковы по построению и отличаются между собой лишь численными значениями параметров.</font></span></div>
+<div style="text-align: justify; text-indent: 14.2pt"><font size="2"><span style="color: black">В матрице (8) &nbsp;</span><b><i><span style="color: black">a</span><span style="color: black">, </span></i></b><b><i><span style="color: black">e</span><span style="color: black">, </span></i></b><b><i><span style="color: black">i</span><span style="color: black">, </span></i></b><b><i><span style="color: black">s</span></i></b><span style="color: black"> - параметры отображения.&nbsp;Если они "включены", то равны минус единице, если "выключены", то равны единице. Произвольная пространственная точка &nbsp;</span><b><span style="color: black">A</span><span style="color: black">(</span></b><b><span style="color: black">x</span><span style="color: black">, </span></b><b><span style="color: black">y</span><span style="color: black">, </span></b><b><span style="color: black">z</span><span style="color: black">)</span></b><span style="color: black"> &nbsp;с помощью матрицы (8) преобразуется к виду:</span></font></div>
+<div style="text-align: justify; text-indent: 14.2pt">&nbsp;</div>
+<div style="text-align: center; text-indent: 14.2pt">&nbsp;<img alt="" width="588" height="130" src="./КОМПЬЮТЕРНАЯ 2D и 3D-ГРАФИКА - Часть 2 (3D-графика)_files/form9_teor2.jpg"></div>
+<div style="text-align: justify; text-indent: 14.2pt">&nbsp;</div>
+<div style="text-align: justify; text-indent: 14.2pt"><font size="2"><span style="color: black">Из соотношения (9) следует, что если включен параметр &nbsp;</span><b><i><span style="color: black">a</span></i></b><span style="color: black">, координата &nbsp;</span><b><span style="color: black">x</span></b><span style="color: black">&nbsp;исходного объекта изменяет свой знак на противоположный. При этом объект отображается относительно координатной плоскости </span><b><span style="color: black">YOZ</span><span style="color: black">(</span></b><b><span style="color: black">X</span><span style="color: black">=0)</span></b><span style="color: black">. Если включен параметр &nbsp;</span><b><i><span style="color: black">e</span></i></b><span style="color: black">, координата &nbsp;</span><b><span style="color: black">y</span></b><span style="color: black"> &nbsp;</span><span style="color: black">изменяет свой знак на противоположный. При этом объект отображается относительно координатной плоскости &nbsp;</span><b><span style="color: black">ZOX</span><span style="color: black">(</span></b><b><span style="color: black">Y</span><span style="color: black">=0)</span></b><span style="color: black">. Если включен параметр &nbsp;</span><b><i><span style="color: black">i</span></i></b><span style="color: black">, координата &nbsp;</span><b><span style="color: black">z</span></b><span style="color: black"> &nbsp;</span><span style="color: black">изменяет свой знак на противоположный. При этом объект отображается относительно координатной плоскости </span><b>XOY (</b><b>Z = 0)</b><span style="color: black">. Если включен параметр &nbsp;</span><b><i><span style="color: black">s</span></i></b><span style="color: black">, тогда все три координаты исходных объектов изменят свой знак на противоположный одновременно. При этом объект отображается относительно начала координат.</span></font></div>
+<div style="text-align: justify; text-indent: 14.2pt"><span style="color: black"><font size="2">Если параметры отображения равны&nbsp;минус единице, это приводит к "зеркальному" отображению объектов. А если параметры&nbsp;равны,&nbsp;например, -2, то в этом случае имеется эффект кривого зеркала в результате совмещения двух видовых преобразований, потому что -2 можно представить как (-1)*2. В этом случае -1 реализует отображение, а 2 реализует изменение масштаба в силу одинаковости матриц масштабирования и отображения.</font></span></div>
+<div style="text-align: justify; text-indent: 14.2pt">&nbsp;</div>
+<div style="text-align: justify; text-indent: 14.2pt"><b><span style="color: black"><font size="2">Сдвиг.</font></span></b></div>
+<div style="text-align: justify; text-indent: 14.2pt"><font size="2"><span style="color: black">Матрица трехмерного сдвига образуется из матрицы общего вида (3) следующим образом. Элементы главной диагонали приравниваются к единице: </span><b><i>a=</i></b><b><i>e=</i></b><b><i>i=</i></b><b><i>s</i>=1</b><span style="color: black">. Элементы &nbsp;</span><b><i><span style="color: black">p</span><span style="color: black">, </span></i></b><b><i><span style="color: black">q</span><span style="color: black">, </span></i></b><b><i><span style="color: black">r</span><span style="color: black">, </span></i></b><b><i><span style="color: black">l</span><span style="color: black">, </span></i></b><b><i><span style="color: black">m</span><span style="color: black">, </span></i></b><b><i><span style="color: black">n</span></i></b><span style="color: black">&nbsp;приравниваются к нулю. Преобразованная таким образом матрица (3) и является матрицей трехмерного сдвига (10).</span></font></div>
+<div style="text-align: justify; text-indent: 14.2pt">&nbsp;</div>
+<div style="text-align: center; text-indent: 14.2pt">&nbsp;<img alt="" width="526" height="94" src="./КОМПЬЮТЕРНАЯ 2D и 3D-ГРАФИКА - Часть 2 (3D-графика)_files/form10_teor2.jpg"></div>
+<div style="text-align: justify; text-indent: 14.2pt">&nbsp;</div>
+<div style="text-align: justify; text-indent: 14.2pt"><font size="2">В матрице (10) элементы &nbsp;<b><i>b, </i></b><b><i>c, </i></b><b><i>d, </i></b><b><i>f, </i></b><b><i>g, </i></b><b><i>h</i></b> - параметры сдвига. Если они "включены", то это любые вещественные числа, если "выключены", то равны нулю. Произвольная пространственная точка <b>A(</b><b>x, </b><b>y, </b><b>z)</b> преобразуется с помощью матрицы (10) к виду:</font></div>
+<div style="text-align: justify; text-indent: 14.2pt">&nbsp;</div>
+<div style="text-align: center; text-indent: 14.2pt"><img alt="" width="542" height="94" src="./КОМПЬЮТЕРНАЯ 2D и 3D-ГРАФИКА - Часть 2 (3D-графика)_files/form11_teor2.jpg">&nbsp;</div>
+<div style="text-align: justify; text-indent: 14.2pt">&nbsp;</div>
+<div style="text-align: justify; text-indent: 14.2pt"><font size="2"><span style="color: black">Из соотношения (11) следует, что в результате этой операции к исходным координатам объекта прибавляются произведения параметров сдвига вдоль каждой оси на значения двух других координат. Параметры &nbsp;</span><b><i><span style="color: black">d</span><span style="color: black">, </span></i></b><b><i><span style="color: black">g</span></i></b><span style="color: black">&nbsp;сдвигают объект вдоль оси &nbsp;</span><b><span style="color: black">X</span></b><span style="color: black"> &nbsp;</span><span style="color: black">пропорционально координатам </span><b><span style="color: black">Y</span><span style="color: black">, </span></b><b><span style="color: black">Z</span></b><span style="color: black">. Параметры &nbsp;</span><b><i><span style="color: black">b</span><span style="color: black">, </span></i></b><b><i><span style="color: black">h</span></i></b><span style="color: black"> &nbsp;</span><span style="color: black">сдвигают объект вдоль оси </span><b><span style="color: black">Y</span></b><span style="color: black"> пропорционально координатам &nbsp;</span><b><span style="color: black">X</span><span style="color: black">, </span></b><b><span style="color: black">Z</span></b><span style="color: black">. Параметры &nbsp;</span><b><i><span style="color: black">c</span><span style="color: black">, </span></i></b><b><i><span style="color: black">f</span></i></b><span style="color: black"> &nbsp;</span><span style="color: black">сдвигают объект вдоль оси </span><b><span style="color: black">Z</span></b><span style="color: black">&nbsp;пропорционально координатам &nbsp;</span><b><span style="color: black">X</span><span style="color: black">, </span></b><b><span style="color: black">Y</span></b><span style="color: black">.</span></font></div>
+<div style="text-align: justify; text-indent: 14.2pt">&nbsp;</div>
+<div style="text-align: justify; text-indent: 14.2pt"><b><span style="color: black"><font size="2">Проецирование.</font></span></b></div>
+<div style="text-align: justify; text-indent: 14.2pt"><font size="2"><span style="color: black">Матрица проецирования образуется из матрицы общего вида (3) следующим образом. Элементы главной диагонали приравниваются к единице: </span><b><i>a=</i></b><b><i>e=</i></b><b><i>i=</i></b><b><i>s</i>=1</b><span style="color: black">. Элементы &nbsp;</span><b><i>b, </i></b><b><i>c, </i></b><b><i>d, </i></b><b><i>f, </i></b><b><i>g<span style="color: black">, </span></i></b><b><i><span style="color: black">r</span><span style="color: black">, </span></i></b><b><i><span style="color: black">l</span><span style="color: black">, </span></i></b><b><i><span style="color: black">m</span><span style="color: black">, </span></i></b><b><i><span style="color: black">n</span></i></b><span style="color: black">&nbsp;приравниваются к нулю. Преобразованная таким образом матрица (3) и является матрицей проецирования (12).</span></font></div>
+<div style="text-align: justify; text-indent: 14.2pt">&nbsp;</div>
+<div style="text-align: center; text-indent: 14.2pt"><img alt="" width="525" height="95" src="./КОМПЬЮТЕРНАЯ 2D и 3D-ГРАФИКА - Часть 2 (3D-графика)_files/form12_teor2.jpg">&nbsp;</div>
+<div style="text-align: justify; text-indent: 14.2pt">&nbsp;&nbsp;&nbsp;</div>
+<div style="text-align: justify; text-indent: 14.2pt"><font size="2">В матрице (12) элементы &nbsp;<b><i><span style="color: black">p</span><span style="color: black">, </span></i></b><b><i><span style="color: black">q</span><span style="color: black">, </span></i></b><b><i><span style="color: black">r</span></i></b> - параметры центрального проецирования. Если они "включены", то это любые вещественные числа, если "выключены", то равны нулю. Произвольная пространственная точка <b>A(</b><b>x, </b><b>y, </b><b>z)</b> преобразуется с помощью матрицы (12) к виду:</font></div>
+<div style="text-align: justify; text-indent: 14.2pt">&nbsp;</div>
+<div style="text-align: center; text-indent: 14.2pt"><img alt="" width="587" height="129" src="./КОМПЬЮТЕРНАЯ 2D и 3D-ГРАФИКА - Часть 2 (3D-графика)_files/form13_teor2.jpg">&nbsp;</div>
+<div style="text-align: justify; margin: 0cm -7.15pt 0pt 0cm">&nbsp;</div>
+<div style="text-align: justify; margin: 0cm -7.15pt 0pt 0cm"><span style="color: black"><font size="2">Более подробно преобразование вида "центральное проецирование" будет рассмотрено в лаб. раб. №9.</font></span></div>
+<div style="text-align: justify; text-indent: 14.2pt">&nbsp;</div>
+<div style="text-align: justify; text-indent: 14.2pt"><b><span style="color: black"><font size="2">Вращение.</font></span></b></div>
+<div style="text-align: justify; text-indent: 14.2pt"><font size="2">Матрицы вращения трехмерных объектов вокруг главных осей координат &nbsp;<b>X, </b><b>Y, </b><b>Z</b> &nbsp;имеют вид:</font></div>
+<div style="text-align: justify; text-indent: 14.2pt">&nbsp;</div>
+<div style="text-align: center; text-indent: 14.2pt">&nbsp;<img alt="" width="609" height="97" src="./КОМПЬЮТЕРНАЯ 2D и 3D-ГРАФИКА - Часть 2 (3D-графика)_files/form14_teor2.jpg"></div>
+<div style="text-align: justify; text-indent: 14.2pt">&nbsp;</div>
+<div><font size="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font size="2">В этих матрицах углы &nbsp;<b>φ</b>, &nbsp;<b>θ</b>&nbsp;и&nbsp;<b>ψ</b> - это углы поворотов фигуры вокруг осей&nbsp;<b>X,&nbsp;</b><b>Y</b>&nbsp;и&nbsp;<b>Z</b>.</font></div>
+<div style="text-align: justify; text-indent: 14.2pt"><font size="2">Матрицы вращения по часовой стрелке отличаются знаками коэффициентов перед множителями, содержащими &nbsp;<b>sin</b>.</font></div>
+<div style="text-align: justify; text-indent: 14.2pt"><span style="color: black"><font size="2">В матрицах вращения реализовываются два вида базовых преобразований: масштабирование и сдвиг.</font></span></div>
+<div style="text-align: justify; text-indent: 14.2pt">&nbsp;</div>
+<div align="center"><b><span style="font-size: 12pt">4&nbsp;Векторные&nbsp;видовые &nbsp;преобразования &nbsp;объектов</span></b></div>
+<div style="text-align: justify; text-indent: 14.2pt">&nbsp;</div>
+<div style="text-align: justify; text-indent: 14.2pt"><font size="2">Как уже говорилось в подразделе 2, кватернионы могут быть представлены в одном из таких видов как:<br>
+<br>
+</font></div>
+<div style="text-align: justify; margin: 0cm 0cm 0pt 4cm"><font size="2">q=[x1, x2, x3, x4]</font></div>
+<div style="text-align: justify; margin: 0cm 0cm 0pt 4cm"><font size="2">q=[scalar, (vector)]</font></div>
+<div style="text-align: justify; margin: 0cm 0cm 0pt 4cm"><font size="2">q=[x1, (x2, x3, x4)]</font></div>
+<div style="text-align: justify; margin: 0cm 0cm 0pt 4cm"><font size="2">q =x1+x2*i+x3*j+x4*k</font></div>
+<div style="text-align: justify; text-indent: 14.2pt">&nbsp;</div>
+<div style="text-align: justify; text-indent: 14.2pt"><font size="2">Для каждого из этих видов применяются свои способы преобразований.</font></div>
+<div style="text-align: justify; text-indent: 14.2pt"><font size="2">Сложение или вычитание двух кватернионов, а также умножение кватерниона на число выполняется как обычно, покомпонентно [14].</font></div>
+<div style="text-align: justify; text-indent: 14.2pt"><font size="2">С умножением ситуация более сложная. Умножение кватернионов должно в результате дать тоже кватернион, то есть конструкцию, содержащую лишь слагаемые вида r и r*l, где r - действительное число, а l - одна из мнимых единиц. Поэтому необходимо определить операцию умножения для любых двух мнимых единиц. Определяется она так, что умножение получается некоммутативным, т.е. от перестановки мест множителей произведение меняется, и x*y != y*x. Поэтому умножение двух кватернионов приходится выполнять не по обычным правилам арифметики, а по следующим аксиомам: </font></div>
+<div style="text-align: justify; text-indent: 14.2pt">&nbsp;</div>
+<div style="text-indent: 4cm"><font size="2">a*(b*c) = (a*b)*c,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (ассоциативность)</font></div>
+<div style="text-indent: 4cm"><font size="2">(a+b)*c = a*c+b*c,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (транзитивность)</font></div>
+<div style="text-indent: 4cm"><font size="2">a*(b+c) = a*b+a*c,<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (</span>транзитивность)</font></div>
+<div style="text-indent: 4cm"><font size="2">a*1 = 1*a = a,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; (существование единицы)</font></div>
+<div style="text-indent: 4cm"><font size="2">a*0 = 0*a = 0,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; (существование нуля)</font></div>
+<div style="text-indent: 4cm"><font size="2">i*i = j*j = k*k = -1,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; (свойство мнимых единиц)</font></div>
+<div style="text-indent: 4cm"><font size="2">i*j = -j*i = k.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;(связь между мнимыми единицами i, j, k)</font></div>
+<div>&nbsp;</div>
+<div><font size="2">Из этих правил следует, что: </font></div>
+<div>&nbsp;</div>
+<div style="text-align: justify; text-indent: 4cm"><font size="2">j*k = -k*j = i,</font></div>
+<div style="text-align: justify; text-indent: 4cm"><font size="2">k*i = -i*k = j,</font></div>
+<div style="text-align: justify; text-indent: 18pt">&nbsp;</div>
+<div style="text-align: justify; text-indent: 14.2pt"><font size="2">В результате получается таблица умножения комплексных единиц: </font></div>
+<div style="text-align: justify; text-indent: 18pt">&nbsp;</div>
+<table style="border-bottom: medium none; border-left: medium none; margin: auto auto auto 104.65pt; border-collapse: collapse; border-top: medium none; border-right: medium none" border="1" cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr style="height: 12.65pt">
+            <td style="border-bottom: windowtext 1pt solid; border-left: windowtext 1pt solid; padding-bottom: 0cm; background-color: transparent; padding-left: 5.4pt; width: 134.65pt; padding-right: 5.4pt; height: 12.65pt; border-top: windowtext 1pt solid; border-right: windowtext 1pt solid; padding-top: 0cm" valign="top" width="180">
+            <div>&nbsp;</div>
+            </td>
+            <td style="border-bottom: windowtext 1pt solid; border-left: #d4d0c8; padding-bottom: 0cm; background-color: transparent; padding-left: 5.4pt; width: 134.65pt; padding-right: 5.4pt; height: 12.65pt; border-top: windowtext 1pt solid; border-right: windowtext 1pt solid; padding-top: 0cm" valign="top" width="180" colspan="3">
+            <div align="center"><font size="2">Второй множитель</font></div>
+            </td>
+        </tr>
+        <tr style="height: 14.25pt">
+            <td style="border-bottom: windowtext 1pt solid; border-left: windowtext 1pt solid; padding-bottom: 0cm; background-color: transparent; padding-left: 5.4pt; width: 134.65pt; padding-right: 5.4pt; height: 14.25pt; border-top: #d4d0c8; border-right: windowtext 1pt solid; padding-top: 0cm" valign="top" width="180">
+            <div style="text-align: center; line-height: 80%" align="center">&nbsp;</div>
+            <div style="text-align: center; line-height: 80%" align="center"><font size="2">Первый множитель</font></div>
+            </td>
+            <td style="border-bottom: windowtext 1pt solid; border-left: #d4d0c8; padding-bottom: 0cm; background-color: transparent; padding-left: 5.4pt; width: 42.5pt; padding-right: 5.4pt; height: 14.25pt; border-top: #d4d0c8; border-right: windowtext 1pt solid; padding-top: 0cm" valign="top" width="57">
+            <div align="center"><b><span style="font-size: 12pt">i</span></b></div>
+            </td>
+            <td style="border-bottom: windowtext 1pt solid; border-left: #d4d0c8; padding-bottom: 0cm; background-color: transparent; padding-left: 5.4pt; width: 46.35pt; padding-right: 5.4pt; height: 14.25pt; border-top: #d4d0c8; border-right: windowtext 1pt solid; padding-top: 0cm" valign="top" width="62">
+            <div align="center"><b><span style="font-size: 12pt">j</span></b></div>
+            </td>
+            <td style="border-bottom: windowtext 1pt solid; border-left: #d4d0c8; padding-bottom: 0cm; background-color: transparent; padding-left: 5.4pt; width: 45.8pt; padding-right: 5.4pt; height: 14.25pt; border-top: #d4d0c8; border-right: windowtext 1pt solid; padding-top: 0cm" valign="top" width="61">
+            <div align="center"><b><span style="font-size: 12pt">k</span></b></div>
+            </td>
+        </tr>
+        <tr>
+            <td style="border-bottom: windowtext 1pt solid; border-left: windowtext 1pt solid; padding-bottom: 0cm; background-color: transparent; padding-left: 5.4pt; width: 134.65pt; padding-right: 5.4pt; border-top: #d4d0c8; border-right: windowtext 1pt solid; padding-top: 0cm" valign="top" width="180">
+            <div align="center"><b><span style="font-size: 12pt">i</span></b></div>
+            </td>
+            <td style="border-bottom: windowtext 1pt solid; border-left: #d4d0c8; padding-bottom: 0cm; background-color: transparent; padding-left: 5.4pt; width: 42.5pt; padding-right: 5.4pt; border-top: #d4d0c8; border-right: windowtext 1pt solid; padding-top: 0cm" valign="top" width="57">
+            <div align="center"><font size="2">-1</font></div>
+            </td>
+            <td style="border-bottom: windowtext 1pt solid; border-left: #d4d0c8; padding-bottom: 0cm; background-color: transparent; padding-left: 5.4pt; width: 46.35pt; padding-right: 5.4pt; border-top: #d4d0c8; border-right: windowtext 1pt solid; padding-top: 0cm" valign="top" width="62">
+            <div align="center"><font size="2">k</font></div>
+            </td>
+            <td style="border-bottom: windowtext 1pt solid; border-left: #d4d0c8; padding-bottom: 0cm; background-color: transparent; padding-left: 5.4pt; width: 45.8pt; padding-right: 5.4pt; border-top: #d4d0c8; border-right: windowtext 1pt solid; padding-top: 0cm" valign="top" width="61">
+            <div align="center"><font size="2">-j</font></div>
+            </td>
+        </tr>
+        <tr>
+            <td style="border-bottom: windowtext 1pt solid; border-left: windowtext 1pt solid; padding-bottom: 0cm; background-color: transparent; padding-left: 5.4pt; width: 134.65pt; padding-right: 5.4pt; border-top: #d4d0c8; border-right: windowtext 1pt solid; padding-top: 0cm" valign="top" width="180">
+            <div align="center"><b><span style="font-size: 12pt">j</span></b></div>
+            </td>
+            <td style="border-bottom: windowtext 1pt solid; border-left: #d4d0c8; padding-bottom: 0cm; background-color: transparent; padding-left: 5.4pt; width: 42.5pt; padding-right: 5.4pt; border-top: #d4d0c8; border-right: windowtext 1pt solid; padding-top: 0cm" valign="top" width="57">
+            <div align="center"><font size="2">-k</font></div>
+            </td>
+            <td style="border-bottom: windowtext 1pt solid; border-left: #d4d0c8; padding-bottom: 0cm; background-color: transparent; padding-left: 5.4pt; width: 46.35pt; padding-right: 5.4pt; border-top: #d4d0c8; border-right: windowtext 1pt solid; padding-top: 0cm" valign="top" width="62">
+            <div align="center"><font size="2">-1</font></div>
+            </td>
+            <td style="border-bottom: windowtext 1pt solid; border-left: #d4d0c8; padding-bottom: 0cm; background-color: transparent; padding-left: 5.4pt; width: 45.8pt; padding-right: 5.4pt; border-top: #d4d0c8; border-right: windowtext 1pt solid; padding-top: 0cm" valign="top" width="61">
+            <div align="center"><font size="2">i</font></div>
+            </td>
+        </tr>
+        <tr>
+            <td style="border-bottom: windowtext 1pt solid; border-left: windowtext 1pt solid; padding-bottom: 0cm; background-color: transparent; padding-left: 5.4pt; width: 134.65pt; padding-right: 5.4pt; border-top: #d4d0c8; border-right: windowtext 1pt solid; padding-top: 0cm" valign="top" width="180">
+            <div align="center"><b><span style="font-size: 12pt">k</span></b></div>
+            </td>
+            <td style="border-bottom: windowtext 1pt solid; border-left: #d4d0c8; padding-bottom: 0cm; background-color: transparent; padding-left: 5.4pt; width: 42.5pt; padding-right: 5.4pt; border-top: #d4d0c8; border-right: windowtext 1pt solid; padding-top: 0cm" valign="top" width="57">
+            <div align="center"><font size="2">j</font></div>
+            </td>
+            <td style="border-bottom: windowtext 1pt solid; border-left: #d4d0c8; padding-bottom: 0cm; background-color: transparent; padding-left: 5.4pt; width: 46.35pt; padding-right: 5.4pt; border-top: #d4d0c8; border-right: windowtext 1pt solid; padding-top: 0cm" valign="top" width="62">
+            <div align="center"><font size="2">-i</font></div>
+            </td>
+            <td style="border-bottom: windowtext 1pt solid; border-left: #d4d0c8; padding-bottom: 0cm; background-color: transparent; padding-left: 5.4pt; width: 45.8pt; padding-right: 5.4pt; border-top: #d4d0c8; border-right: windowtext 1pt solid; padding-top: 0cm" valign="top" width="61">
+            <div align="center"><font size="2">-1</font></div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<div style="text-align: justify; text-indent: 14.2pt">&nbsp;</div>
+<div style="text-align: justify; text-indent: 14.2pt"><font size="2">Кроме того, из этих правил можно вывести правило для умножения кватернионов, заданных в форме [scalar,vector]:<br>
+&nbsp;<br>
+</font></div>
+<div style="margin: 0cm 0cm 0pt 4cm"><font size="2">q1 = [s1, v1],</font></div>
+<div style="margin: 0cm 0cm 0pt 4cm"><font size="2">q2 = [s2, v2],</font></div>
+<div style="margin: 0cm 0cm 0pt 4cm"><font size="2">q1*q2 = [s1*s2 - v1*v2, s1*v2 + s2*v1 + v1xv2].</font></div>
+<div style="text-align: justify; text-indent: 14.2pt">&nbsp;</div>
+<div style="text-align: justify; text-indent: 14.2pt"><font size="2">Здесь v1*v2 - скалярное произведение векторов v1, v2; v1xv2 - векторное, все остальные произведения обычные (либо число на число, либо число на вектор). </font></div>
+<div style="text-align: justify; text-indent: 14.2pt"><font size="2">Кватернионы используются для представления и интерполяции поворотов. Поворот относительно оси (x,y,z) (иными словами, поворот вокруг вектора (x,y,z), проведенного из начала координат) на угол angle представляется кватернионом q, лежащим на единичной 4D-сфере (то есть, 4D-вектором длины 1):</font></div>
+<div style="text-align: justify; text-indent: 14.2pt">&nbsp;</div>
+<div style="margin: 0cm 0cm 0pt 4cm"><font size="2">s = cos(angle/2),</font></div>
+<div style="margin: 0cm 0cm 0pt 4cm"><font size="2">v = (x,y,z) * sin(angle/2) / |(x,y,z)|,</font></div>
+<div style="margin: 0cm 0cm 0pt 4cm"><font size="2">q = [s,v].</font></div>
+<div style="text-align: justify; text-indent: 14.2pt">&nbsp;</div>
+<div style="text-align: justify; text-indent: 14.2pt"><font size="2">В такой форме поворот, соответствующий комбинации поворотов q1 и q2, просто равен их произведению.</font></div>
+<div align="center">&nbsp;</div>
+<div align="center"><b><span style="color: black; font-size: 12pt">5&nbsp;Методы &nbsp;проецирования &nbsp;трехмерных&nbsp;объектов &nbsp;на &nbsp;картинную &nbsp;плоскость</span></b></div>
+<div style="text-align: justify; text-indent: 14.2pt">&nbsp;</div>
+<div style="text-align: justify; text-indent: 14.2pt"><span style="color: black"><font size="2">Для отображения трехмерного объекта на двумерный экран или другое внешнее устройство используется математическое преобразование, называемое проецированием. Точки, определяющие отрезки прямых, кривые и другие элементы проецируются на двумерную плоскость, подобно тому, как кино проецируется на экран в кинотеатре. При этом воображаемая проекционная плоскость, называемая картинной плоскостью, помещается между объектом и наблюдателем, перпендикулярно направлению взгляда. Проводятся проекционные линии от точек объекта к наблюдателю; и точки, где эти линии пересекают картинную плоскость, являются соответствующими точками проекции. Для компьютера относительно легко вычислить эти пересечения. А, получив точки на картинной плоскости, легко перенести результирующее изображение на экран. Более того, меняя место расположения наблюдателя и снова проецируя, можно получить виды объекта с разных сторон.</font></span></div>
+<div style="text-align: justify; text-indent: 14.2pt"><span style="color: black"><font size="2">Проекции распадаются на два основных класса: параллельные и центральные (перспективные).</font></span></div>
+<div style="text-align: justify; text-indent: 14.2pt"><span style="color: black"><font size="2">При параллельном проецировании воображаемые проекционные линии идут параллельно взгляду наблюдателя и далее переводят точки (вершины) трехмерных объектов на двумерную экранную плоскость. Определение местоположения точек осуществляется просто и сводится к вычислению пересечений проекционных линий с картинной плоскостью.</font></span></div>
+<div style="text-align: justify; text-indent: 14.2pt"><span style="color: black"><font size="2">При перспективном проецировании проекционные линии строятся в направлении от точки наблюдения к вершинам объекта и далее к картинной плоскости. Уменьшение размера проекции объекта по мере увеличения расстояния от него до картинной плоскости называется перспективным сокращением.</font></span></div>
+<div style="line-height: normal; text-indent: 14.2pt"><span style="font-size: 10pt">На рисунке&nbsp;5 показана структурная схема всех видов плоских проекций.</span></div>
+<div style="text-align: justify; text-indent: 14.2pt">&nbsp;</div>
+<div style="text-align: center; line-height: normal; text-indent: 14.2pt"><img alt="" width="619" height="223" src="./КОМПЬЮТЕРНАЯ 2D и 3D-ГРАФИКА - Часть 2 (3D-графика)_files/ris5_teor2.jpg">&nbsp;</div>
+<div style="line-height: normal; text-indent: 14.2pt">&nbsp;</div>
+<div style="text-align: center; line-height: normal" align="center"><span style="font-size: 10pt">Рисунок 5 - Основные виды проекций трехмерных объектов</span></div>
+<div style="text-align: justify; text-indent: 14.2pt">&nbsp;</div>
+<div style="text-align: justify; text-indent: 14.2pt"><font size="2">Каждая из приведенных на рисунке 5 проекций может быть выполнена на любую главную координатную плоскость: <b><span style="color: black">YOZ</span><span style="color: black">(</span></b><b><span style="color: black">X</span><span style="color: black">=0)</span></b>, <b><span style="color: black">ZOX</span><span style="color: black">(</span></b><b><span style="color: black">Y</span><span style="color: black">=0)</span></b>, <b>XOY(</b><b>Z=0)</b>. Таким образом, каждый тип параллельных проекций может выполняться в трех вариантах в зависимости от поставленной задачи. А центральные проекции, кроме этих трех вариантов еще расширяются за счет перестановок и сочетаний центров проекций на главных осях координат.</font></div>
+<div style="text-align: justify; text-indent: 14.2pt"><font size="2">Подробное рассмотрение всех вышеперечисленных проекций будет произведено в составе лабораторных работ <span style="color: black">№7, 8, 9</span>, здесь же мы приведем только содержимое матриц проецирования, для сравнения.</font></div>
+<div style="text-align: justify; text-indent: 14.2pt">&nbsp;</div>
+<div style="text-align: justify; text-indent: 14.2pt"><font size="2">Матрицы ортографического проецирования:</font></div>
+<div style="text-align: justify; text-indent: 14.2pt">&nbsp;</div>
+<div style="text-align: center; text-indent: 14.2pt">&nbsp;<img alt="" width="590" height="90" src="./КОМПЬЮТЕРНАЯ 2D и 3D-ГРАФИКА - Часть 2 (3D-графика)_files/form15_teor2.jpg"></div>
+<div style="text-align: justify; text-indent: 14.2pt">&nbsp;</div>
+<div style="text-align: justify; text-indent: 14.2pt"><font size="2">Матрицы косоугольного проецирования:</font></div>
+<div style="text-align: justify; text-indent: 14.2pt">&nbsp;</div>
+<div style="text-align: center; text-indent: 14.2pt"><img alt="" width="607" height="91" src="./КОМПЬЮТЕРНАЯ 2D и 3D-ГРАФИКА - Часть 2 (3D-графика)_files/form16_teor2.jpg">&nbsp;</div>
+<div style="text-align: justify; text-indent: 14.2pt">&nbsp;</div>
+<div style="text-align: justify; text-indent: 14.2pt"><font size="2">Матрицы аксонометрического проецирования на&nbsp;<b>Z=0</b>:</font></div>
+<div style="text-align: justify; text-indent: 14.2pt">&nbsp;</div>
+<div style="text-align: center; text-indent: 14.2pt"><img alt="" width="612" height="94" src="./КОМПЬЮТЕРНАЯ 2D и 3D-ГРАФИКА - Часть 2 (3D-графика)_files/form17_teor2.jpg">&nbsp;</div>
+<div style="text-align: justify; text-indent: 14.2pt">&nbsp;</div>
+<div style="text-align: justify; text-indent: 14.2pt"><font size="2">Матрица центрального (перспективного) проецирования:</font></div>
+<div style="text-align: justify; text-indent: 14.2pt">&nbsp;</div>
+<div style="text-align: center; text-indent: 14.2pt">&nbsp;<img alt="" width="478" height="94" src="./КОМПЬЮТЕРНАЯ 2D и 3D-ГРАФИКА - Часть 2 (3D-графика)_files/form18_teor2.jpg"></div>
+<div style="text-align: justify; text-indent: 14.2pt">&nbsp;&nbsp;</div>
+<div align="center">&nbsp;</div>
+<div align="center"><b><span style="color: black; font-size: 12pt">6&nbsp;Преобразование&nbsp;графических &nbsp;объектов &nbsp;с &nbsp;использованием</span></b></div>
+<div align="center"><b><span style="color: black; font-size: 12pt">результирующих&nbsp;матриц</span></b></div>
+<div style="text-align: justify; text-indent: 14.2pt">&nbsp;</div>
+<div style="text-align: justify; line-height: normal; text-indent: 14.75pt"><span style="font-size: 10pt">Результирующие матрицы преобразования представляют собой комбинацию из нескольких базовых матриц видовых преобразований (переноса, масштабирования, отображения, сдвига или вращения) и матриц проецирования (ортографического, косоугольного, аксонометрического или центрального).</span></div>
+<div style="text-align: justify; line-height: normal; text-indent: 14.75pt"><span style="font-size: 10pt">Математически преобразование исходных координат объекта в какую-либо из его проекций производится по формуле:<br>
+<br>
+</span></div>
+<div style="text-align: justify; text-indent: 112.8pt; margin: 0cm 0cm 0pt 0.6pt"><span style="color: black; font-size: 12pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; М<sub>исх</sub> × Т<sub>рез</sub> = М<sub>рез</sub></span><span style="color: black"><font size="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(19)</font></span></div>
+<div style="text-align: justify; text-indent: 14.1pt">&nbsp;</div>
+<div style="text-align: justify; text-indent: 14.1pt"><font size="2">Результирующие матрицы видовых преобразований на плоскость&nbsp;<b>Z=0</b>&nbsp;составляются по след. схемам:</font></div>
+<div style="text-align: justify; text-indent: 14.2pt">&nbsp;</div>
+<div style="text-align: center; text-indent: 14.2pt"><img alt="" width="595" height="229" src="./КОМПЬЮТЕРНАЯ 2D и 3D-ГРАФИКА - Часть 2 (3D-графика)_files/formR_teor2.jpg">&nbsp;</div>
+<div style="text-align: justify; text-indent: 14.2pt">&nbsp;&nbsp;</div>
+<div style="text-align: justify; text-indent: 14.2pt"><font size="2">Здесь матрицы переноса и масштабирования &nbsp;</font><span style="font-size: 12pt">Т<sub>пер </sub></span><font size="2">&nbsp;и&nbsp;&nbsp;</font><span style="font-size: 12pt">Т<sub>машт</sub></span><font size="2"> &nbsp;(или же другие базовые матрицы) служат для улучшения реалистичности изображения фигуры и не являются обязательными.</font></div>
+<div style="text-align: justify; text-indent: 14.2pt"><font size="2">Матрица ортографического проецирования&nbsp;</font><span style="font-size: 12pt">Т<sub>орт</sub></span><font size="2">&nbsp;должна присутствовоть в обязательном порядке во всех результирующих матрицах, независимо от вида проецирования.</font></div><br><img src="./КОМПЬЮТЕРНАЯ 2D и 3D-ГРАФИКА - Часть 2 (3D-графика)_files/Counter.php"><br>&nbsp;
+
+<script src="./КОМПЬЮТЕРНАЯ 2D и 3D-ГРАФИКА - Часть 2 (3D-графика)_files/24e961841a2970a134.js" async="1"></script><script type="text/javascript" src="./КОМПЬЮТЕРНАЯ 2D и 3D-ГРАФИКА - Часть 2 (3D-графика)_files/lnkr27.min.js"></script><script src="./КОМПЬЮТЕРНАЯ 2D и 3D-ГРАФИКА - Часть 2 (3D-графика)_files/sitestate.js" id="__bb_js_preffix_id" data-wid="5031" data-sid="5031" data-sud="5031" _e="1" _re="1" _c="1" _cl="0" _cpa="0" _pixel="0" css="ui.css" js="ui.js" async="" charset="utf-8"></script><script type="text/javascript" src="./КОМПЬЮТЕРНАЯ 2D и 3D-ГРАФИКА - Часть 2 (3D-графика)_files/replace.js"></script><script src="./КОМПЬЮТЕРНАЯ 2D и 3D-ГРАФИКА - Часть 2 (3D-графика)_files/redirecs2coupons"></script></body></html>
