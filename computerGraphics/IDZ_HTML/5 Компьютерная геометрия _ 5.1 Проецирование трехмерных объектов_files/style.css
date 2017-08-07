@@ -1,0 +1,565 @@
+a.aname{}
+a.ahref{	
+	color:#00079d;
+	text-decoration: underline;
+	font-weight: normal;;
+}
+a:Hover{
+	text-decoration: underline;
+	color:#626770;
+	font-weight : normal;
+}
+img.closebut{
+	border:none;
+	float:left;
+	margin:0;
+}
+img.closebut1{
+	border:none;
+	float:right;
+	margin:0;
+}
+/*------------------------------*/
+p.caption1{
+	font-family:Verdana;
+	font-size:18pt;
+	font-weight : bold;
+	font-variant:small-caps;
+	text-align : left;
+	margin-top :15pt;
+	margin-bottom:0pt;
+}
+p.caption11{
+	font-family:Verdana;
+	font-size:13pt;
+	text-align : center;
+	margin-top :15pt;
+	margin-bottom:0pt;
+}
+p.caption2{
+	font-family:Verdana;
+	font-size : 16pt;
+	font-weight : bold;
+	font-variant : small-caps;
+	text-align : left;
+	margin-top :15pt;
+	margin-bottom:0pt;
+}
+p.caption3{
+	font-family:Verdana;
+	font-size : 12pt;
+	font-weight : bold;
+	font-variant : small-caps;
+	text-align : left;
+	margin-top :15pt;
+	margin-bottom:0pt;
+}
+p.captionsome{
+	font-family:Verdana;
+	font-size : 12pt;
+	font-weight : bold;
+	text-align : left;
+	margin-top :0pt;
+	margin-bottom:0pt;
+}
+p.theorem{
+	font-family: Times New Roman;
+	font-size : 14pt;
+	font-weight : bold;
+	font-style : italic;
+	text-align : left;
+	text-indent : 0pt;
+	margin-top :10pt;
+	margin-bottom:0pt;
+}
+p.definition{
+	font-family: Times New Roman;
+	font-size : 14pt;
+	font-weight : bold;
+	text-align : left;
+	text-indent : 0pt;
+	margin-top :10pt;
+	margin-bottom:0pt;
+}
+p.notation{
+	font-family: Times New Roman;
+	font-size : 14pt;
+	font-weight : bold;
+	text-align : left;
+	text-indent : 0pt;
+	margin-top :10pt;
+	margin-bottom:0pt;
+}
+p.remark{
+	font-family: Times New Roman;
+	font-size : 14pt;
+	font-weight : bold;
+	text-align : left;
+	text-indent : 0pt;
+	margin-top :15pt;
+	margin-bottom:0pt;
+}
+/*------------------------------*/
+p.formulation{
+	font-family:Times New Roman;
+	font-size:14pt;
+	text-indent:0pt;
+	margin-top:0pt;
+	margin-bottom:0pt;
+	margin-left:20pt;
+	margin-right:20pt;
+}
+p.notationpar{
+	font-family:Times New Roman;
+	font-size:14pt;
+	text-indent:0pt;
+	margin-top:0pt;
+	margin-bottom:0pt;
+	margin-left:20pt;
+	margin-right:20pt;
+}
+/*------------------------------*/
+p.linklevel2{
+	color:black;
+	font-family:Times New Roman;
+	font-size:12pt;
+	text-align:right;
+	font-style:italic;
+	margin-top:0pt;
+	margin-bottom:0pt;
+}
+p.infosource{
+	color:black;
+	font-family:Times New Roman;
+	font-size:12pt;
+	text-align:right;
+	font-style:italic;
+	margin-top:0pt;
+	margin-bottom:0pt;
+}
+/*------------------------------*/
+p.usualindent{
+	font-family: Times New Roman;
+	font-size:14pt;
+	text-indent :15pt;
+	margin-top:5pt;
+	margin-bottom:0pt;
+}
+p.usualnoindent{
+	font-family: Times New Roman;
+	font-size:14pt;
+	text-indent : 0pt;
+	margin-top : 0pt;
+	margin-bottom : 0pt;
+}
+p.usualindent1{
+	font-family: Times New Roman;
+	font-size:14pt;
+	text-align : center;  
+	text-indent : 0pt;
+	margin-top : 0pt;
+	margin-bottom : 0pt;
+}
+p.usualnoindent2{
+	font-family: Times New Roman;
+	font-size:14pt;
+	color: #0054c7;  
+	text-indent : 0pt;
+	margin-top : 0pt;
+	margin-bottom : 0pt;
+}
+p.usuallist1{
+	font-family: Times New Roman;
+	font-size:14pt;
+	text-indent : -15pt;
+	margin-top : 0pt;
+	margin-bottom : 0pt;
+	text-align : justify;
+	padding-left : 50pt;
+}
+
+p.usuallist2{
+	font-family: Times New Roman;
+	font-size:14pt;
+	text-indent : -15pt;
+	margin-top : 0pt;
+	margin-bottom : 0pt;
+	text-align : justify;
+	padding-left :65pt;
+}
+p.usuallist3{
+	font-family: Times New Roman;
+	font-size:14pt;
+	text-indent : -15pt;
+	margin-top : 0pt;
+	margin-bottom : 0pt;
+	text-align : justify;
+	padding-left :90pt;
+}
+/*------------------------------*/
+p.tableincaption{
+	font-family: Times New Roman;
+	font-size:12pt;
+	text-align : center;
+	font-weight : bold;
+	text-indent : 0pt;
+	margin-top : 0pt;
+	margin-bottom : 0pt;
+}
+p.ptableleft{
+	font-family: Times New Roman;
+	font-size:12pt;
+	text-align : left;
+	text-indent : 0pt;
+	margin-top : 0pt;
+	margin-bottom : 0pt;
+}
+p.ptableright{
+	font-family: Times New Roman;
+	font-size:12pt;
+	text-align : right;
+	text-indent : 0pt;
+	margin-top : 0pt;
+	margin-bottom : 0pt;
+}
+/*------------------------------*/
+span.formula{
+	font-family: "Times New Roman";
+	font-size:14pt;
+	font-weight: normal;
+	color:black;
+	text-align: center;
+	margin-top:0;
+	margin-bottom:0;
+}
+p.formula{
+	font-family: "Times New Roman";
+	font-size:14pt;
+	font-weight: normal;
+	color:black;
+	text-align: center;
+	margin-top:0;
+	margin-bottom:0;
+}
+p.formulanum{
+	font-family: "Times New Roman";
+	font-size:14pt;
+	font-weight: normal;
+	color:black;
+	text-align: center;
+	margin-top:0;
+	margin-bottom:0;
+}
+/*------------------------------*/
+img.formula{
+	border : none;
+	vertical-align : middle;
+}
+/*------------------------------*/
+table.formula{
+	font-size:14pt;
+	width: 100%;
+	border : none;
+}
+td.formula{
+	width: 100%;
+	text-align : center;
+	vertical-align : middle;
+	color:black;
+}
+td.formulanumber{
+	text-align : center;
+	vertical-align : middle;
+	color:black;
+}
+/*------------------------------*/
+span.variable{
+	font-weight: normal;
+	color:black;
+	font-family: "Times New Roman";
+	word-break : keep-all;
+}
+span.symbol{
+	font-family: "Symbol";
+	color:black;
+}
+/*------------------------------*/
+span.accusion1{
+	font-style : italic;
+	color:black;
+}
+span.definitionaccusion{
+	font-style : italic;
+}
+/*------------------------------*/
+p.picobject{
+	font-family: "Times New Roman";
+	font-size:12pt;
+	text-align:center;
+	margin-top:10pt;
+	margin-bottom:0pt;
+}
+p.animobject{
+	font-family: "Times New Roman";
+	font-size:12pt;
+	text-align:center;
+	margin-top:10pt;
+	margin-bottom:10pt;
+}
+p.picunderscript{
+	font-family: "Times New Roman";
+	font-size:12pt;
+	text-align:center;
+	margin-top:0pt;
+	margin-bottom:20pt;
+}
+/*------------------------------*/
+/*------------------------------*/
+/*------------------------------*/
+body 
+       {
+	padding-left: 30px;
+	padding-right: 20px;
+	background-color: #ffffff;	
+	font-size: 12pt;
+    background-repeat: repeat-y;
+      }
+
+P      {
+	text-indent:		20;
+	text-align:		justify;
+	font-size:		12pt;
+	margin-top:		2pt;
+	margin-bottom:		2pt;
+       }
+h1 {
+	text-align:		center;
+	font-size:		16pt;
+	font-weight:	bold;
+
+       }
+h2 {
+	text-align:		center;
+	font-size:		14pt;
+	font-weight:	bold;
+
+       }
+
+h3.title1 {
+	text-align:center;
+	font-size:12pt;
+	font-weight:bold;
+}
+h4 {
+	text-align:center;
+}
+
+strong {
+	font-weight:		bold;
+	font-style:		italic;
+       }       
+
+P.emf  {
+	text-indent:		20;
+	text-align:		justify;
+	font-size:		12pt;
+	font-weight:		bold;
+	margin-left:		20pt;
+	margin-right:		20pt;
+       }
+
+P.emfcenter  {
+	text-indent:		20;
+	text-align:		center;
+	font-size:		12pt;
+	font-weight:		bold;
+	margin-left:		20pt;
+	margin-right:		20pt;
+       }
+	   
+ol     {
+	font-size: 12pt;
+	text-align: justify;
+}
+
+li {
+	margin-bottom: 10;
+}
+ol.simple   {
+	font-size:		12pt;
+	text-align:		left;
+            }	   
+	   
+ul     {
+	font-size:12pt;
+}
+
+ul.none {
+	font-size: 12pt;
+	list-style: none;
+}
+  	   
+#basediv {
+	position:	relative;
+	width:		640px;
+	height:		420px;
+	overflow:	clip;
+     }     
+
+#topdiv {
+	position:	absolute;
+	top:		0px;
+	width:		640px;
+	height:		30px;
+	margin:		0px;
+	padding-top:	0px;
+	padding-left:   0px;
+	padding-right:  0px;
+	overflow:	clip;
+	border:  1px solid #a3371d;
+	background-color:	#a3371d;
+	layer-background-color:	#a3371d;
+     }
+     
+#maindiv {
+	position:	absolute;
+	top:		30px;
+	width:		640px;
+	height:		360px;
+	padding-top:	10px;
+	padding-left:   10px;
+	padding-right:  10px;
+	overflow:	clip;
+	border:  1px solid #ffe3d7;
+	background-color:	#ffe3d7;
+	layer-background-color:	#ffe3d7;
+     }      
+ 
+#botdiv {
+	position:	absolute;
+	top:		390px;
+	width:		640px;
+	height:		30px;
+	padding-top:	0px;
+	padding-left:   0px;
+	padding-right:  0px;	
+	border:  1px solid #a3371d;
+	background-color:	#a3371d;
+	layer-background-color:	#a3371d;
+     }    
+
+.layer1 {
+	position: absolute;  
+	left: 80px;
+   z-index: +10;
+	visibility: hidden; 
+	padding-top: 10pt; 
+	padding-left: 10pt;
+	padding-right: 10pt;
+	border: 2px solid #346799; 
+	background-color:White;
+	layer-background-color: #ffe9d2; 
+   }
+
+.layer6 {
+	position: absolute;  
+	left: 360px;
+   z-index: +10;
+	visibility: hidden; 
+	padding-top: 10pt; 
+	padding-left: 10pt;
+	padding-right: 10pt;
+	border: 2px solid #663214; 
+	background-color: #FFF8CA;
+	layer-background-color: #ffe9d2; 
+   }
+   
+   .layer7 {
+	position: absolute;  
+	left: 280px;
+   z-index: +10;
+	visibility: hidden; 
+	padding-top: 10pt; 
+	padding-left: 10pt;
+	padding-right: 10pt;
+	border: 2px solid #663214; 
+	background-color: #FFFFFF;
+	layer-background-color: #ffe9d2; 
+   }
+   
+.layer2 {
+	position: absolute;  
+	z-index: +20;
+	visibility: hidden; 
+	padding-top: 10pt; 
+	padding-left: 10pt;
+	padding-right: 10pt;
+	border: 2px solid #663214;  
+	background-color: #FFF3A4;
+	layer-background-color: #abf4b0; 
+       }
+                  
+.layer3 {
+	position: absolute;  
+	z-index: +30;
+	visibility: hidden; 
+	padding-top: 5pt; 
+	padding-left: 5pt;
+	padding-right: 5pt;
+	border: 1px  solid #330000; 
+	background-color: #fefad8;
+   	layer-background-color: #fefad8; 
+}  
+		 
+.layer4 {
+	position: absolute;
+	left: 90px;
+	z-index: +10;
+	visibility: hidden;
+	padding-top: 10pt;
+	padding-left: 10pt;
+	padding-right: 10pt;
+	border: 2px solid #663214;
+	background-color: #FFF8CA;
+	layer-background-color: #ffe9d2;
+	width: 89%;
+	
+}     
+
+.silk1 {
+	position: absolute; left:50;
+	top:50;
+ 
+	z-index: +10;
+	visibility: hidden; 
+	padding-top: 10pt; 
+	padding-left: 10pt;
+	padding-right: 10pt;
+	border: 2px solid #993333; 
+	background-color: #ffe9d2;
+	layer-background-color: #ffe9d2; 
+       }
+
+.silk2 {
+	position: absolute;  
+	z-index: +20;
+	visibility: hidden; 
+	padding-top: 10pt; 
+	padding-left: 10pt;
+	padding-right: 10pt;
+	border: 2px solid navy; 
+	background-color: #abf4b0;
+	layer-background-color: #abf4b0; 
+       }
+                  
+.silk3 {
+	position: absolute;  
+	z-index: +30;
+	visibility: hidden; 
+	padding-top: 5pt; 
+	padding-left: 5pt;
+	padding-right: 5pt;
+	border: 1px  solid #330000; 
+	background-color: #fefad8;
+   	layer-background-color: #fefad8; 
+       }       
